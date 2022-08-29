@@ -1,12 +1,16 @@
 # Trackgenix
-- Description
-- How to open
-EJ: 
+- This page allows employees to have a register of hours of work, rate and register their projects
+- How to open 
 1- access to the folder "Semana-01"
 2- open the file "index.html" on your browser
+3- sign up or log in
+4- enjoy all your benefits
 
+
+### Week 01
+With my team did the design of the landing page and the rest of layouts in figma
 ### Week 02
-Description what we have done
+Start writing the landing page in HTML
 ### Week 03
-Description what we have done
+Upcoming--
 _Cristian Gerster_
