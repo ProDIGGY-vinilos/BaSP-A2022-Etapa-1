@@ -1,0 +1,26 @@
+ aside{
+    width: 160px;
+    height: 1440px;
+    float: left;
+    
+    position: fixed;
+    background-color: #FFFFFF;
+  }
+  #upperaside{
+    padding-top: 15px;
+    text-align: center;
+    background-color: hsla(239, 30%, 31%, 0.40);
+  }
+  
+  #upperaside > h2 {
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 20px;
+    width: 60%;
+  }
+  
+
+  header, main, footer {
+    margin-left: 290px;
+  }
+  
