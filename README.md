@@ -8,11 +8,11 @@
 
 
 
-### Week 01
+### Week 00
 With my team did the design of the landing page and the rest of layouts in figma
-### Week 02
+### Week 01
 Start writing the landing page in HTML
-### Week 03
+### Week 02
 Upcoming--
 
 _Cristian Gerster_
