@@ -10,6 +10,7 @@
      traceability, Productivity, Booster" />
     <title>Trackgenix</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/d7c9d962f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -21,33 +22,45 @@
             <img id="arrow" src="assets/Icons/sidebar arrow.png" alt="arrow sidebar">
         </div>
         <div id="optionsidebar">
-            <div>
-                <img src="assets/icons/Home icon.png" alt="Home icon">
-                <h3 class="icontext">Home</h3>
+            <div class="menu-option">
+                <a href="">
+                    <i class="fa-solid fa-house fa-lg"></i>
+                    <h3 class="side-text">Home</h3>
+                </a>
             </div>
-            <div>
-                <img src="assets/Icons/Sign in-up icon.png" alt="SignUp icon">
-                <h3 class="icontext">SignUp</h3>
+            <div class="menu-option">
+                <a href="">
+                    <i class="fa-solid fa-user fa-lg"></i>
+                    <h3 class="side-text">SignUp</h3>
+                </a>
             </div>
-            <div>
-                <img src="assets/Icons/Sign in-up icon.png" alt="LogIn icon">
-                <h3 class="icontext">LogIn</h3>
+            <div class="menu-option">
+                <a href="">
+                    <i class="fa-solid fa-user fa-lg"></i>
+                    <h3 class="side-text">LogIn</h3>
+                </a>
             </div>
         </div>
         <div id="contactsidebar">
             <h3>Contact Us</h3>
             <div class="lineorange"></div>
-            <div>
-                <img src="assets/Icons/MessageIcon.png" alt="Mail icon">
-                <p class="icontext"><a href="https://mail.google.com" target="_blank">trackgenix@gmail.com</a></p>
+            <div class="contact-option">
+                <a href="https://mail.google.com" target="_blank">
+                    <i class="fa-regular fa-envelope fa-xl"></i>
+                    <p class="side-text">trackgenix@gmail.com</p>
+                </a>
             </div>
-            <div>
-                <img src="assets/Icons/Telephone icon.png" alt="Call icon">
-                <p class="icontext">(000) 000-0000</p>
+            <div class="contact-option">
+                <a href="">
+                    <i class="fa-solid fa-phone fa-xl"></i>
+                    <p class="side-text">(000) 000-0000</p>
+                </a>    
             </div>
-            <div>
-                <img src="assets/Icons/Location icon.png" alt="Location icon">
-                <p class="icontext">1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
+            <div class="contact-option">
+                <a href="">
+                    <i id="location-icon" class="fa-solid fa-location-dot fa-xl""></i>
+                    <p class="side-text">1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
+                </a>
             </div>
         </div>
     </aside>
@@ -69,7 +82,8 @@
     </header>
     <main>
         <section id="whoweare">
-            <h2>Who We Are</h2>
+            <h2 class="title">Who We Are</h2>
+            <div class="titlebar"></div>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's
@@ -90,7 +104,7 @@
                 ever since the 1500s, when
                 an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <p>
+            <p id="textgreen">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's
                 standard dummy text ever since the 1500s, when
@@ -105,9 +119,10 @@
             </p>
         </section>
         <section id="whychooseus">
-            <h2>Why choose us?</h2>
+            <h2 class="title">Why choose us?</h2>
+            <div class="titlebar"></div>
             <div id="productivitysection">
-                <h3>Productivity Booster</h3>
+                <h3 class="title">Productivity Booster</h3>
                 <img src="assets/producti 1.png" alt="Productivity Booster">
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -121,7 +136,7 @@
                 </p>
             </div>
             <div id="traceabilitysection">
-                <h3>Work Traceability</h3>
+                <h3 class="title">Work Traceability</h3>
                 <img src="assets/work traceability.png" alt="work Traceability">
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -133,7 +148,7 @@
                 </p>
             </div>
             <div id="managementsection">
-                <h3>Leadership and team management</h3>
+                <h3 class="title">Leadership and team management</h3>
                 <img src="assets/liderazgo 1.png" alt="Leadership and team management">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aliquam neque corporis deserunt
@@ -144,7 +159,7 @@
                 </p>
             </div>
             <div id="decisionmakingsection">
-                <h3>Decision making</h3>
+                <h3 class="title">Decision making</h3>
                 <img src="assets/toma de decisio 1.png" alt="Decision making">
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, aspernatur eaque consequatur

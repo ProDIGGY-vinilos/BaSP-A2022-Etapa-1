@@ -2,20 +2,47 @@
  header,
  main,
  footer {
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+   'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+   'Helvetica Neue', sans-serif;
    height: 900px;
-   width: 1440px;
+ }
+ h2{
+  text-align: center;
+ }
+ a {
+  text-decoration: none;
+ }
+ i {
+  
+  color:#F13312;
  }
 
  /* side bar settings */
  aside {
-   width: 155px;
+   width: 180px;
    height: 900px;
    text-align: left;
    float: left;
    position: fixed;
    background-color: #FFFFFF;
-   color: #F13312;
+ }
+ #optionsidebar > div > a > i {
+  display: inline;
+
+ }
+ #contactsidebar > div > a > i {
+  display: inline;
+ }
+ #location-icon {
+  vertical-align:  14px;
+ }
+ 
+ .side-text{
+  display: inline-block;
+  margin-left: 15px;
+  color: #F13312;
+  width: 100px;
  }
 
  #upperaside {
@@ -40,26 +67,29 @@
 
  #optionsidebar {
    font-size: 15px;
-   margin-top: 40px;
+   margin-top: 80px;
    margin-left: 20px;
  }
 
- #optionsidebar>div {
-   margin-bottom: 25px;
- }
 
  #contactsidebar {
    padding-top: 225px;
    font-size: 10px;
    margin-left: 10px;
+   color: #F13312;
  }
 
  #contactsidebar>h3 {
    font-weight: bold;
    font-size: 14px;
    text-align: left;
-
  }
+.contact-option{
+  margin-bottom: 20px;
+}
+.menu-option{
+  margin-bottom: 50px;
+}
 
  .lineorange {
    height: 2px;
@@ -67,25 +97,17 @@
    background: #F13312;
    margin-bottom: 20px;
  }
-
- .icontext {
-   width: 95px;
-   text-align: left;
-   display: inline-block;
-   padding-left: 5px;
-   margin-bottom: 20px;
- }
-
- header,
+ 
  main,
  footer {
-   margin-left: 155px;
+   margin-left: 180px;
  }
 
  /* end side bar settings*/
  /* header settings*/
  header {
    background-image: url(../assets/office.png);
+   background-size: cover;
    
  }
 
@@ -94,15 +116,15 @@
    position: absolute;
    width: 481px;
    height: 900px;
-   left: 183px;
    background-color: rgba(0, 0, 0, 0.3);
    backdrop-filter: blur(2px);
    text-align: left;
-   margin-left: 160px;
+   margin-left: 260px;
  }
- #textheader > h1, div, h2, p{
-  margin-left: 22px;
- }
+#textheader > h1,#textheader > div, #textheader > h2, #textheader >p{
+  margin-left: 25px;
+}
+
  #textheader > h1{
   font-size: 40px;
   font-weight: 500;
@@ -131,3 +153,46 @@
  }
 
  /* end header settings*/
+ /*General settings main*/
+ .title{
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+ }
+ .titlebar{
+  height: 10px;
+  margin-right: 100px;
+  margin-left: 240px;
+  background: #d9d9d9;
+  margin-bottom: 85px;
+ }
+ /*who we are settings*/
+ 
+#whoweare{
+  margin-top: 175px;
+  margin-bottom: 400px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #373867;
+}
+#whoweare > p{
+  margin-bottom: 20px;
+  margin-right: 100px;
+  margin-left: 240px;
+}
+
+#textgreen{
+  color: #AACE9B;
+  font-size: 18px;
+  font-weight: 400;
+}
+ /*end who we are settings*/
+ /*why choose us settings*/
+ 
+#whychooseus > h3{
+  text-align: left;
+}
+ /*end why choose us settings*/
