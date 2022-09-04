@@ -365,6 +365,7 @@ label[for=message]{
  /* More sections settings*/
  #more-sections{
  background-image: url(../assets/jj-ying-7JX0-bfiuxQ-unsplash\ 1.png);
- background-size: cover;
+ background-size:cover;
+ height: 247px;
 }
 /* end More sections settings */
