@@ -14,8 +14,7 @@
   text-decoration: none;
  }
  i {
-  
-  color:#F13312;
+  color: #F13312;
  }
 
  /* side bar settings */
@@ -98,7 +97,7 @@
    margin-bottom: 20px;
  }
  
- main,
+ main ,
  footer {
    margin-left: 180px;
  }
@@ -169,10 +168,10 @@
  }
 
  /*who we are settings*/
- #whoweare > h2{
+ #who-we-are > h2{
   margin-bottom: 15px;
  }
-#whoweare{
+#who-we-are{
   margin-top: 250px;
   margin-bottom: 300px;
   text-align: center;
@@ -195,7 +194,7 @@
  /*end who we are settings*/
  /*why choose us PRODUCTIVITY BOOSTER settings*/
 
- #whychooseus > div > h2{
+ #why-choose-us > div > h2{
   margin-bottom: 5px;
 }
 .subtitle-bar{
@@ -265,3 +264,107 @@ margin-left: 150px;
 }
 
  /*end why choose us settings*/
+
+ /* Functionalities settings */
+ #functionalities {
+  padding-top: 150px;
+  padding-bottom: 100px;
+ }
+ 
+ #hours-log, #resource-management, #reports, #multiple-roles{
+  display: inline-block;
+  width: 44%;
+  margin-bottom: 100px;
+ }
+ #hours-log, #reports{
+  margin-left: 180px;
+ }
+ .img-functionalities{
+  display: inline;
+  margin-right: 20px;
+ }
+ .text-functionalities{
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+ }
+ .text-functionalities > h4 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+ }
+ .text-functionalities > p {
+  font-size: 20px;
+  vertical-align: top;
+ }
+ /* end Functionalities settings */
+
+ /* Contact settings*/
+ form{
+  margin-left: 250px;
+  margin-bottom: 50px;
+ }
+ input{
+  width: 450px;
+  height: 37px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+ }
+ select{
+  width: 446px;
+  font-size: 15px;
+  height: 42px;
+  border-radius: 5px;
+  margin-left: 133px;
+ }
+ textarea{
+  width: 1029px;
+  height: 180px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block;
+ }
+ button{
+  color: #373867;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 5px;
+ }
+button[type=submit]{
+  width: 177px;
+  height: 48px;
+  margin-right: 735px;
+  background-color:#AACE9B ;
+}
+#cross-icon, #email-icon{
+  margin-right: 10px;
+  color: #373867;
+}
+button[type=reset]{
+  width: 117px;
+  height: 48px;
+  background-color: #F13312;
+}
+label[for=message]{
+  margin-bottom: 30px;
+  margin-top: 35px;
+}
+.label-contact{
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #373867;
+  display: block;
+}
+ /* end Contact settings*/
+
+ /* More sections settings*/
+ #more-sections{
+ background-image: url(../assets/jj-ying-7JX0-bfiuxQ-unsplash\ 1.png);
+ background-size: cover;
+}
+/* end More sections settings */

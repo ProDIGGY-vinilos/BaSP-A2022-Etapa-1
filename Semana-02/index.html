@@ -81,7 +81,7 @@
         </div>
     </header>
     <main>
-        <section id="whoweare">
+        <section id="who-we-are">
             <h2 class="title">Who We Are</h2>
             <div class="titlebar"></div>
             <p>
@@ -118,7 +118,7 @@
                 an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
         </section>
-        <section id="whychooseus">
+        <section id="why-choose-us">
             <div id="productivitysection">
                 <h2 class="title">Why choose us?</h2>
                 <div class="titlebar"></div>
@@ -185,72 +185,76 @@
             </div>
         </section>
         <section id="functionalities">
-            <h3>Functionalities</h3>
-            <div id="hourslog">
-                <img src="assets/Icons/Hours Log.png" alt="Hours Log">
-                <h4>Hours log</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita sunt dolor quibusdam
-                    deleniti
-                    molestias, pariatur maiores id et officia. Voluptatum magnam quae beatae voluptas ipsam
-                    quibusdam
-                    labore unde. Repellat.
-                </p>
+            <h2 class="title">Functionalities</h2>
+            <div class="titlebar"></div>
+            <div id="hours-log">
+                <img class="img-functionalities" src="assets/Icons/Hours Log.png" alt="Hours Log">
+                <div class="text-functionalities">
+                    <h4>Hours log</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita sunt dolor quibusdam
+                        deleniti
+                        molestias, pariatur maiores id et officia.
+                    </p>
+                </div>
             </div>
-            <div id="resourcemanagement">
-                <img src="assets/Icons/Resource Management.png" alt="Resource management">
-                <h4>Resource management</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita sunt dolor quibusdam
-                    deleniti
-                    molestias, pariatur maiores id et officia. Voluptatum magnam quae beatae voluptas ipsam
-                    quibusdam
-                    labore unde. Repellat.
-                </p>
+            <div id="resource-management">
+                <img class="img-functionalities" src="assets/Icons/Resource Management.png" alt="Resource management">
+                <div class="text-functionalities">
+                    <h4>Resource management</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita sunt dolor quibusdam
+                        deleniti
+                        molestias, pariatur maiores id et officia.
+                    </p>
+                </div>
             </div>
             <div id="reports">
-                <img src="assets/Icons/Reports.png" alt="Reports">
-                <h4>Reports</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita sunt dolor quibusdam
-                    deleniti
-                    molestias, pariatur maiores id et officia. Voluptatum magnam quae beatae voluptas ipsam
-                    quibusdam
-                    labore unde. Repellat.
-                </p>
+                <img class="img-functionalities" src="assets/Icons/Reports.png" alt="Reports">
+                <div class="text-functionalities">
+                    <h4>Reports</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita sunt dolor quibusdam
+                        deleniti
+                        molestias, pariatur maiores id et officia.
+                    </p>
+                </div>
             </div>
-            <div id="multipleroles">
-                <img src="assets/Icons/Multiple Roles.png" alt="Multiple roles">
-                <h4>Multiple roles</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita sunt dolor quibusdam
-                    deleniti
-                    molestias, pariatur maiores id et officia. Voluptatum magnam quae beatae voluptas ipsam
-                    quibusdam
-                    labore unde. Repellat.
-                </p>
+            <div id="multiple-roles">
+                <img class="img-functionalities" src="assets/Icons/Multiple Roles.png" alt="Multiple roles">
+                <div class="text-functionalities">
+                    <h4>Multiple roles</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita sunt dolor quibusdam
+                        deleniti
+                        molestias, pariatur maiores id et officia.
+                    </p>
+                </div>
             </div>
         </section>
-        <section id="contactform">
+        <section id="contact-form">
+            <h2 class="title">Contact</h2>
+            <div class="titlebar"></div>
             <form action="" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name Here">
-                <label for="email">Email</label>
+                <div>
+                    <label class="label-contact" for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name Here">
+                    <select required>
+                        <option value="Contact area" selected disabled hidden>Contact area</option>
+                        <option value="Human Resources">Human Resources</option>
+                        <option value="Systems">Systems</option>
+                        <option value="Commercialization">Commercialization</option>
+                    </select>
+                </div>
+                <label class="label-contact" for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="Your Email Here">
-                <select required>
-                    <option value="Contact area" selected disabled hidden>Contact area</option>
-                    <option value="Human Resources">Human Resources</option>
-                    <option value="Systems">Systems</option>
-                    <option value="Commercialization">Commercialization</option>
-                </select>
-                <label for="message">Message</label>
+                <label class="label-contact" for="message">Message</label>
                 <textarea id="message" name="message" placeholder="Your Message Here"></textarea>
-                <button type="submit" id="submitbtn">Send message</button>
-                <button type="reset" id="resetbtn">Reset</button>
+                <button type="submit" id="submitbtn"><i id="email-icon" class="fa-regular fa-envelope fa-sm"></i> Send message</button>
+                <button type="reset" id="resetbtn"><i id="cross-icon" class="fa-solid fa-xmark fa-sm"></i> Reset</button>
             </form>
         </section>
-        <section id="moresections">
-            <img src="assets/jj-ying-7JX0-bfiuxQ-unsplash 1.png" alt="Background">
+        <section id="more-sections">
             <div id="productsol">
                 <h5>Products</h5>
                 <ol>
