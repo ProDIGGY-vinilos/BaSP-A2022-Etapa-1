@@ -173,8 +173,8 @@
   margin-bottom: 15px;
  }
 #whoweare{
-  margin-top: 175px;
-  margin-bottom: 400px;
+  margin-top: 250px;
+  margin-bottom: 300px;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
@@ -194,18 +194,22 @@
 }
  /*end who we are settings*/
  /*why choose us PRODUCTIVITY BOOSTER settings*/
-#whychooseus > h2{
+
+ #whychooseus > div > h2{
   margin-bottom: 5px;
 }
-.subtitle-bar-left{
+.subtitle-bar{
   height: 4px;
   width: 825px;
-  /*margin-left: 160px;*/
   background: #286276;
-  margin-bottom: 40px;
-  
+  margin-bottom: 40px; 
 }
-
+#subtitle-bar-grey{
+  height: 4px;
+  width: 825px;
+  background: #d9d9d9;
+  margin-bottom: 40px;  
+}
 .text-why-left{
   display: inline-block;
   width: 720px;
@@ -219,6 +223,45 @@
 .img-why-right{
   display: inline;
   margin-top: 80px;
+}
+
+
+/*////////////*/
+
+.subtitle-bar-right{
+  height: 4px;
+  width: 825px;
+  background: #FFFFFF;
+  margin-bottom: 40px;  
+  margin-left: -15px;
+}
+.text-why-right{
+  display: inline-block;
+  width: 850px;
+  margin-top: 120px;
+  margin-right: 50px;
+  vertical-align: top;
+  font-size: 30px;
+  margin-bottom: 300px;
+}
+.p-why-right{
+margin-left: 150px;
+}
+.img-why-left{
+  display: inline;
+  margin-top: 80px;
+  margin-left: 185px;
+}
+#management-section{
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+#traceability-section > div > h3, #decision-making-section > div > h3{
+margin-left: 150px;
+}
+#traceability-section, #decision-making-section{
+  padding-top: 150px;
+  background-color: #d9d9d9;
 }
 
  /*end why choose us settings*/
