@@ -9,7 +9,6 @@ aside {
   }
   #option-aside>div>a>i {
     display: inline;
- 
   }
   #contact-aside>div>a>i {
     display: inline;
@@ -72,10 +71,8 @@ aside {
     background: #F13312;
     margin-bottom: 20px;
   }
- 
   main,
   footer {
     margin-left: 180px;
   }
- 
   /* end side bar settings*/
