@@ -1,0 +1,27 @@
+/* More sections settings*/
+#more-sections {
+    background-image: url(../assets/jj-ying-7JX0-bfiuxQ-unsplash\ 1.png);
+    background-size: cover;
+    height: 250px;
+    text-align: center;
+  }
+  .ol-more-sections > h5{
+   font-size: 20px;
+   font-weight: 500;
+   margin-bottom: 20px;
+   margin-left: -15px;
+  }
+  .ol-more-sections{
+   color: #373867;
+   margin-top: 65px;
+   font-size: 14px;
+   text-align: left;
+   font-weight: 400;
+   display: inline-block;
+   margin-right: 150px;
+   width: fit-content;
+  }
+  #support-ol{
+   margin-right: 0px;
+  }
+  /* end More sections settings */

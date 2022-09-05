@@ -1,0 +1,56 @@
+/* header settings*/
+header {
+    background-image: url(../assets/office.png);
+    background-size: cover;
+    height: 900px;
+  }
+ 
+  #text-header {
+    color: #FFFFFF;
+    position: absolute;
+    width: 481px;
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    text-align: left;
+    margin-left: 260px;
+  }
+ 
+  #text-header>h1,
+  #text-header>div,
+  #text-header>h2,
+  #text-header>p {
+    margin-left: 25px;
+    text-align: left;
+  }
+ 
+  #text-header>h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 170px;
+  }
+ 
+  #text-header>h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 85px;
+  }
+ 
+  #text-header>p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    width: 350px;
+    color: rgba(255, 255, 255, 0.75);
+  }
+ 
+ 
+  .line-green {
+    height: 2px;
+    background: #AACE9B;
+    margin-bottom: 20px;
+    margin-right: 7px;
+  }
+ 
+  /* end header settings*/

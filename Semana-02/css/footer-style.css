@@ -1,0 +1,19 @@
+/* Footer settings */
+footer{
+  background-color: #AACE9B;
+  height: 177px;
+  background-size: cover;
+  text-align: center;
+  font-size: 12px;
+ }
+ footer > h6 {
+  text-align: center;
+  margin-top: 20px;
+ }
+ #social-media > a{
+  margin-left: 50px;
+ }
+ #social-media{
+  padding-top: 35px;
+}
+ /* end Footer settings */

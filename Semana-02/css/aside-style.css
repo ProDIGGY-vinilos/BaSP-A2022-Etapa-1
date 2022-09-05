@@ -1,0 +1,81 @@
+/* side bar settings */
+aside {
+    width: 180px;
+    height: 900px;
+    text-align: left;
+    float: left;
+    position: fixed;
+    background-color: #FFFFFF;
+  }
+  #option-aside>div>a>i {
+    display: inline;
+ 
+  }
+  #contact-aside>div>a>i {
+    display: inline;
+  }
+  #location-icon {
+    vertical-align: 14px;
+  }
+  .text-aside {
+    display: inline-block;
+    margin-left: 15px;
+    color: #F13312;
+    width: 100px;
+  }
+  #upper-aside {
+    padding-top: 15px;
+    text-align: center;
+    background-color: hsla(239, 30%, 31%, 0.40);
+  }
+  #upper-aside>img {
+    margin-right: 20px;
+  }
+  #upper-aside>i {
+    margin-right: 20px;
+    color: #373867;
+  }
+  #upper-aside>h2 {
+    padding-left: 10px;
+    padding-right: 2px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 20px;
+    color: #373867;
+  }
+  #option-aside {
+    font-size: 15px;
+    margin-top: 80px;
+    margin-left: 20px;
+  }
+  #contact-aside {
+    padding-top: 225px;
+    font-size: 10px;
+    margin-left: 10px;
+    color: #F13312;
+  }
+  #contact-aside>h3 {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+  }
+  .contact-option {
+    margin-bottom: 20px;
+  }
+  .menu-option {
+    margin-bottom: 50px;
+  }
+  .line-orange {
+    height: 2px;
+    width: 85px;
+    background: #F13312;
+    margin-bottom: 20px;
+  }
+ 
+  main,
+  footer {
+    margin-left: 180px;
+  }
+ 
+  /* end side bar settings*/

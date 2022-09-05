@@ -1,0 +1,24 @@
+ aside,
+ header,
+ main, footer {
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   /*height: 900px;*/
+ }
+ h2 {
+   text-align: center;
+ }
+ a {
+   text-decoration: none;
+ }
+ li > a{
+  color: #373867;
+ }
+ i {
+   color: #F13312;
+ }
+ 
+ 
+ 
+
+ 
