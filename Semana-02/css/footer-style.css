@@ -1,14 +1,14 @@
 /* Footer settings */
-footer{
-  background-color: #AACE9B;
+footer{ 
   height: 177px;
+  background-color: #AACE9B;
   background-size: cover;
   text-align: center;
   font-size: 12px;
  }
  footer > h6 {
-  text-align: center;
   margin-top: 20px;
+  text-align: center;
  }
  #social-media > a{
   margin-left: 50px;

@@ -1,14 +1,14 @@
 /*General settings main*/
 .title {
+    margin-bottom: 5px;
     font-size: 40px;
     color: black;
     font-weight: bold;
-    margin-bottom: 5px;
   }
   .title-bar {
     height: 10px;
     margin-right: 100px;
     margin-left: 240px;
-    background: #d9d9d9;
     margin-bottom: 80px;
+    background: #d9d9d9;
   }

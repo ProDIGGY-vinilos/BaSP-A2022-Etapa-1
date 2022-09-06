@@ -6,32 +6,32 @@ form {
   input {
     width: 450px;
     height: 37px;
-    font-size: 15px;
-    border-radius: 5px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 15px;
   }
   select {
     width: 446px;
-    font-size: 15px;
     height: 42px;
-    border-radius: 5px;
     margin-left: 133px;
+    border-radius: 5px;
+    font-size: 15px;
   }
   textarea {
+    display: block;
+    margin-bottom: 10px;
     width: 1029px;
     height: 180px;
-    font-size: 15px;
     border-radius: 5px;
-    margin-bottom: 10px;
-    display: block;
+    font-size: 15px;
   }
   button {
+    border-color: transparent;
+    border-radius: 5px;
     color: #373867;
     font-weight: 500;
     font-size: 15px;
     text-align: center;
-    border-color: transparent;
-    border-radius: 5px;
   }
   button[type=submit] {
     width: 177px;
@@ -54,11 +54,11 @@ form {
     margin-top: 35px;
   }
   .label-contact {
+    margin-bottom: 5px;
+    display: block;
     font-size: 15px;
     font-weight: 500;
-    margin-bottom: 5px;
     color: #373867;
-    display: block;
   }
   button{
     transition: 0.4s;

@@ -5,14 +5,14 @@
   .subtitle-bar {
     height: 4px;
     width: 825px;
-    background: #286276;
     margin-bottom: 40px;
+    background: #286276;
   }
   #subtitle-bar-grey {
     height: 4px;
     width: 825px;
-    background: #d9d9d9;
     margin-bottom: 40px;
+    background: #d9d9d9;
   }
   .text-why-left {
     display: inline-block;
@@ -20,9 +20,9 @@
     margin-top: 120px;
     margin-left: 180px;
     margin-right: 100px;
+    margin-bottom: 250px;
     vertical-align: top;
     font-size: 30px;
-    margin-bottom: 250px;
   }
   .img-why-right {
     display: inline;
@@ -32,18 +32,18 @@
   .subtitle-bar-right {
     height: 4px;
     width: 825px;
-    background: #FFFFFF;
     margin-bottom: 40px;
     margin-left: -15px;
+    background: #FFFFFF;
   }
   .text-why-right {
     display: inline-block;
     width: 850px;
     margin-top: 120px;
     margin-right: 50px;
+    margin-bottom: 300px;
     vertical-align: top;
     font-size: 30px;
-    margin-bottom: 300px;
   }
   .p-why-right {
     margin-left: 150px;
