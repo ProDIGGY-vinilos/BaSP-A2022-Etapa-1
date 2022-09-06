@@ -33,4 +33,16 @@
     font-size: 20px;
     vertical-align: top;
   }
+  #functionalities h4:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: #F13312;
+  }
+  .image-zoom{
+    transition: 0.3s;
+  }
+  .image-zoom:hover{
+    cursor: pointer;
+    transform: scale(1.15, 1.15);
+  }
   /* end Functionalities settings */

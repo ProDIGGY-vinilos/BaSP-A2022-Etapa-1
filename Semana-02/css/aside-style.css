@@ -71,6 +71,9 @@ aside {
     background: #F13312;
     margin-bottom: 20px;
   }
+  .text-aside:hover, i:hover{
+    color: #373867;
+  }
   main,
   footer {
     margin-left: 180px;

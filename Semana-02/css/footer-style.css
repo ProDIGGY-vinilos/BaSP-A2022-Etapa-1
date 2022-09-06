@@ -16,4 +16,11 @@ footer{
  #social-media{
   padding-top: 35px;
 }
+.image-zoom-footer{
+  transition: 0.3s;
+}
+.image-zoom-footer:hover {
+  transform: scale(1.2, 1.2);
+}
+
  /* end Footer settings */

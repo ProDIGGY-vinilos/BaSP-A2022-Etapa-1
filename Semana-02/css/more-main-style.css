@@ -24,4 +24,7 @@
   #support-ol{
    margin-right: 0px;
   }
+  #more-sections div h5:hover{
+    color: #F13312;
+  }
   /* end More sections settings */

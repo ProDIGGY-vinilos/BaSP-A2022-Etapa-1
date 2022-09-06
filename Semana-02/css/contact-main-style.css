@@ -60,4 +60,12 @@ form {
     color: #373867;
     display: block;
   }
+  button{
+    transition: 0.4s;
+  }
+
+  button:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.24)
+  }
   /* end Contact settings*/

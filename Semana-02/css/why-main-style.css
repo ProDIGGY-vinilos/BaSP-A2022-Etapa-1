@@ -66,5 +66,13 @@
     padding-top: 150px;
     background-color: #d9d9d9;
   }
+
+  #why-choose-us h3:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    color: #F13312;
+  }
+
+  
   /*end why choose us settings*/
  
