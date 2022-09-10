@@ -1,4 +1,9 @@
 /* header settings*/
+/*MOBILE SETTINGS*/
+@media only screen and (max-width: 480px){
+  
+}
+/*END MOBILE SETTINGS*/
   header {
     height: 900px;
     background-image: url(../assets/office.png);

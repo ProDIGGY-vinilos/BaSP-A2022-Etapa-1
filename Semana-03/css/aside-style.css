@@ -1,7 +1,16 @@
 /* side bar settings */
+/*MOBILE SETTINGS*/
+@media only screen and (max-width: 480px){
+  aside{
+    display: none;
+  }
+}
+/*END MOBILE SETTINGS*/
+
 aside {
     position: fixed;
-    float: left;
+    display: flex;
+    flex-direction: column;
     width: 180px;
     height: 900px;
     background-color: #FFFFFF;
