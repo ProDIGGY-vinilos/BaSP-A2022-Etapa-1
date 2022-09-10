@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="descripcion"
@@ -24,57 +23,46 @@
     <link rel="stylesheet" type="text/css" href="css/footer-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <aside>
         <div id="upper-aside">
             <img src="assets/logo-trackgenix.png" alt="Logo Trackgenix">
-            <h2>Trackgenix</h2>
+            <p>Trackgenix</p>
             <i class="fa-solid fa-angle-left fa-xl"></i>
         </div>
-        <div id="option-aside">
-            <div class="menu-option">
-                <a href="">
-                    <i class="fa-solid fa-house fa-lg"></i>
-                    <h3 class="text-aside">Home</h3>
-                </a>
+            <nav id="option-aside">
+                    <a class="menu-option" href="">
+                        <i class="fa-solid fa-house fa-lg"></i>
+                        <p class="text-aside">Home</p>
+                    </a>
+                    <a class="menu-option" href="">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                        <p class="text-aside">SignUp</p>
+                    </a>
+                    <a class="menu-option" href="">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                        <p class="text-aside">LogIn</p>
+                    </a>
+            </nav>
+            <div id="contact-aside">
+                <h3>Contact Us</h3>
+                <div class="line-orange"></div>
+                    <a class="contact-option" href="https://mail.google.com" target="_blank">
+                        <i class="fa-regular fa-envelope fa-xl"></i>
+                        <p class="text-aside">trackgenix@gmail.com</p>
+                    </a>
+                    <a class="contact-option" href="">
+                        <i class="fa-solid fa-phone fa-xl"></i>
+                        <p class="text-aside">(000) 000-0000</p>
+                    </a>
+                    <a class="contact-option" href="">
+                        <i id="location-icon" class="fa-solid fa-location-dot fa-xl"></i>
+                        <p class="text-aside">1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
+                    </a>
             </div>
-            <div class="menu-option">
-                <a href="">
-                    <i class="fa-solid fa-user fa-lg"></i>
-                    <h3 class="text-aside">SignUp</h3>
-                </a>
-            </div>
-            <div class="menu-option">
-                <a href="">
-                    <i class="fa-solid fa-user fa-lg"></i>
-                    <h3 class="text-aside">LogIn</h3>
-                </a>
-            </div>
-        </div>
-        <div id="contact-aside">
-            <h3>Contact Us</h3>
-            <div class="line-orange"></div>
-            <div class="contact-option">
-                <a href="https://mail.google.com" target="_blank">
-                    <i class="fa-regular fa-envelope fa-xl"></i>
-                    <p class="text-aside">trackgenix@gmail.com</p>
-                </a>
-            </div>
-            <div class="contact-option">
-                <a href="">
-                    <i class="fa-solid fa-phone fa-xl"></i>
-                    <p class="text-aside">(000) 000-0000</p>
-                </a>
-            </div>
-            <div class="contact-option">
-                <a href="">
-                    <i id="location-icon" class="fa-solid fa-location-dot fa-xl""></i>
-                    <p class="text-aside">1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
-                </a>
-            </div>
-        </div>
     </aside>
     <header>
         <div id="text-header">
@@ -178,7 +166,7 @@
                         ullam blanditiis dolores officia!
                     </p>
                 </div>
-                <img class="img-why-right" src="assets/liderazgo.png" alt="Leadership and team management">
+                <img class="img-why-right" src="assets/leadership.png" alt="Leadership and team management">
             </div>
             <div id="decision-making-section">
                 <img class="img-why-left" src="assets/decision-making.png" alt="Decision making">
@@ -211,7 +199,8 @@
                 </div>
             </div>
             <div id="resource-management">
-                <img class="image-zoom" class="img-functionalities" src="assets/Icons/resource-management.png" alt="Resource management">
+                <img class="image-zoom" class="img-functionalities" src="assets/Icons/resource-management.png"
+                 alt="Resource management">
                 <div class="text-functionalities">
                     <h4>Resource management</h4>
                     <p>
@@ -247,10 +236,12 @@
         <section id="contact-form">
             <h2 class="title">Contact</h2>
             <div class="title-bar"></div>
-            <form action="" method="post">
+            <form>
                 <div>
-                    <label class="label-contact" for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name Here">
+                    <div>
+                        <label class="label-contact" for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name Here">
+                    </div>
                     <select required>
                         <option value="Contact area" selected disabled hidden>Contact area</option>
                         <option value="Human Resources">Human Resources</option>
@@ -258,13 +249,17 @@
                         <option value="Commercialization">Commercialization</option>
                     </select>
                 </div>
-                <label class="label-contact" for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your Email Here">
-                <label class="label-contact" for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Your Message Here"></textarea>
-                <button type="submit" id="submitbtn"><i id="email-icon" class="fa-regular fa-envelope fa-sm"></i>
+                <div>
+                    <label class="label-contact" for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your Email Here">
+                </div>
+                <div>
+                    <label class="label-contact" for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message Here"></textarea>
+                </div>
+                <button type="submit" id="submit-btn"><i id="email-icon" class="fa-regular fa-envelope fa-sm"></i>
                     Send message</button>
-                <button type="reset" id="resetbtn"><i id="cross-icon" class="fa-solid fa-xmark fa-sm"></i>
+                <button type="reset" id="reset-btn"><i id="cross-icon" class="fa-solid fa-xmark fa-sm"></i>
                     Reset</button>
             </form>
         </section>
@@ -301,24 +296,23 @@
     <footer>
         <div id="social-media">
             <a href="https://www.linkedin.com/in/gerstercristian/" target="_blank">
-                <img class="image-zoom-footer" src="assets/Icons/LinkedIn - Negative.png" alt="LinkedIn">
+                <img class="image-zoom-footer" src="assets/Icons/linkedIn-negative.png" alt="LinkedIn">
             </a>
             <a href="https://www.facebook.com" target="_blank">
-                <img class="image-zoom-footer" src="assets/Icons/Facebook - Negative.png" alt="Facebook">
+                <img class="image-zoom-footer" src="assets/Icons/facebook-negative.png" alt="Facebook">
             </a>
             <a href="https://www.twitter.com" target="_blank">
-                <img class="image-zoom-footer" src="assets/Icons/Twitter - Negative.png" alt="Twitter">
+                <img class="image-zoom-footer" src="assets/Icons/twitter-negative.png" alt="Twitter">
             </a>
             <a href="https://www.instagram.com" target="_blank">
-                <img class="image-zoom-footer" src="assets/Icons/Instagram - Negative.png" alt="Instagram">
+                <img class="image-zoom-footer" src="assets/Icons/instagram-negative.png" alt="Instagram">
             </a>
             <a href="https://www.github.com/ProDIGGY-vinilos" target="_blank">
-                <img class="image-zoom-footer" src="assets/Icons/Github - Negative.png" alt="Github">
+                <img class="image-zoom-footer" src="assets/Icons/github-negative.png" alt="Github">
             </a>
         </div>
         <h6>Rosario, Argentina</h6>
-        <h6>Copyright &copy; 2022 Radium Rocket. All rights reserved</h6>
+        <h6>Copyright <i class="fa fa-copyright"></i> 2022 Radium Rocket. All rights reserved</h6>
     </footer>
 </body>
-
 </html>

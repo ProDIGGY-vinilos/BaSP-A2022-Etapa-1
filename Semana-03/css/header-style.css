@@ -12,7 +12,7 @@
   #text-header {
     position: absolute;
     width: 481px;
-    height: 900px;
+    /*height: 900px;*/
     margin-left: 260px;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(2px);
@@ -27,7 +27,7 @@
     text-align: left;
   }
   #text-header>h1 {
-    margin-top: 170px;
+    padding-top: 170px;
     font-size: 40px;
     font-weight: 500;
   }

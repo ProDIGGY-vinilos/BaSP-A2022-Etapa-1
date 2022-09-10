@@ -1,5 +1,5 @@
 /* Footer settings */
-footer{ 
+footer{
   height: 177px;
   background-color: #AACE9B;
   background-size: cover;
@@ -21,6 +21,12 @@ footer{
 }
 .image-zoom-footer:hover {
   transform: scale(1.2, 1.2);
+}
+h6 > i {
+  color: #373867;
+}
+h6 > i :hover{
+  color: #373867;
 }
 
  /* end Footer settings */
