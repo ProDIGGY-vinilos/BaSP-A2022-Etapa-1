@@ -1,0 +1,48 @@
+/* Functionalities settings */
+  #functionalities {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  #hours-log,
+  #resource-management,
+  #reports,
+  #multiple-roles {
+    display: inline-block;
+    width: 44%;
+    margin-bottom: 100px;
+  }
+  #hours-log,
+  #reports {
+    margin-left: 180px;
+  }
+  .img-functionalities {
+    display: inline;
+    margin-right: 20px;
+  }
+  .text-functionalities {
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+  }
+  .text-functionalities>h4 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .text-functionalities>p {
+    font-size: 20px;
+    vertical-align: top;
+  }
+  #functionalities h4:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: #F13312;
+  }
+  .image-zoom{
+    transition: 0.3s;
+  }
+  .image-zoom:hover{
+    cursor: pointer;
+    transform: scale(1.15, 1.15);
+  }
+  /* end Functionalities settings */

@@ -1,0 +1,82 @@
+/* side bar settings */
+aside {
+    position: fixed;
+    float: left;
+    width: 180px;
+    height: 900px;
+    background-color: #FFFFFF;
+    text-align: left;
+  }
+  #option-aside>div>a>i {
+    display: inline;
+  }
+  #contact-aside>div>a>i {
+    display: inline;
+  }
+  #location-icon {
+    vertical-align: 14px;
+  }
+  .text-aside {
+    display: inline-block;
+    width: 100px;
+    margin-left: 15px;
+    color: #F13312;
+  }
+  #upper-aside {
+    background-color: hsla(239, 30%, 31%, 0.40);
+    padding-top: 15px;
+    text-align: center;
+  }
+  #upper-aside>img {
+    margin-right: 20px;
+  }
+  #upper-aside>i {
+    margin-right: 20px;
+    color: #373867;
+  }
+  #upper-aside>h2 {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 2px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #373867;
+  }
+  #option-aside {
+    margin-top: 80px;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  #contact-aside {
+    margin-left: 10px;
+    padding-top: 225px;
+    font-size: 10px;
+    color: #F13312;
+  }
+  #contact-aside>h3 {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+  }
+  .contact-option {
+    margin-bottom: 20px;
+  }
+  .menu-option {
+    margin-bottom: 50px;
+  }
+  .line-orange {
+    margin-bottom: 20px;
+    height: 2px;
+    width: 85px;
+    background: #F13312;
+    
+  }
+  .text-aside:hover, i:hover{
+    color: #373867;
+  }
+  main,
+  footer {
+    margin-left: 180px;
+  }
+  /* end side bar settings*/

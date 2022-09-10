@@ -1,0 +1,26 @@
+/* Footer settings */
+footer{ 
+  height: 177px;
+  background-color: #AACE9B;
+  background-size: cover;
+  text-align: center;
+  font-size: 12px;
+ }
+ footer > h6 {
+  margin-top: 20px;
+  text-align: center;
+ }
+ #social-media > a{
+  margin-left: 50px;
+ }
+ #social-media{
+  padding-top: 35px;
+}
+.image-zoom-footer{
+  transition: 0.3s;
+}
+.image-zoom-footer:hover {
+  transform: scale(1.2, 1.2);
+}
+
+ /* end Footer settings */
