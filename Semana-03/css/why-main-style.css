@@ -1,0 +1,69 @@
+.subtitle-bar {
+    height: 4px;
+    width: 112%;
+    margin-bottom: 7%;
+}
+#subtitle-bar-blue{
+    background: #286276;
+}
+#subtitle-bar-grey {
+    background: #d9d9d9;
+}
+.subtitle-bar-right {
+    margin-left: -5%;
+    background: #FFFFFF;
+}
+/*/////////////////////////*/
+.text-why-left {
+    display: inline-flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 5%;
+    /*margin-bottom: 15%;*/
+    vertical-align: top;
+    font-size: 30px;
+}
+.img-why-right {
+    margin-top: 4%;
+}
+/*////////////*/
+.img-why-left {
+    display: inline;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+.text-why-right {
+    display: inline-flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 5%;
+    margin-right: 5%;
+    vertical-align: top;
+    font-size: 30px;
+}
+.text-why-right > .title{
+    margin-left: 15%;
+}
+.p-why-right {
+    margin-left: 15%;
+}
+
+#traceability-section,
+#decision-making-section {
+    padding-top: 14%;
+    padding-bottom: 14%;
+    background-color: #d9d9d9;
+}
+#management-section, #productivity-section {
+    padding-top: 14%;
+    padding-bottom: 14%;
+}
+
+
+#why-choose-us h3:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: #F13312;
+}
