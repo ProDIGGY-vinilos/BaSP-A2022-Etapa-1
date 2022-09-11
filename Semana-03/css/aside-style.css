@@ -1,90 +1,77 @@
 /* side bar settings */
-
 aside {
-    position: fixed;
-    display: flex;
+    /*position: i;*/
+    display: inline-flex;
     flex-direction: column;
-    width: 180px;
+    float: left;
+    width: 12%;
     height: 900px;
     background-color: #FFFFFF;
     text-align: left;
-  }
-  #option-aside>div>a>i {
-    display: inline;
-  }
-  #contact-aside>div>a>i {
-    display: inline;
-  }
-  #location-icon {
+}
+#option-aside>a>i, #contact-aside>a>i {
+    color: #F13312;
+}
+#option-aside > a, #contact-aside > a {
+    display: inline-flex;
+}
+#location-icon {
     vertical-align: 14px;
-  }
-  .text-aside {
-    display: inline-block;
+}
+.text-aside {
     width: 100px;
     margin-left: 15px;
     color: #F13312;
-  }
-  #upper-aside {
+}
+#upper-aside {
     background-color: hsla(239, 30%, 31%, 0.40);
     padding-top: 15px;
     text-align: center;
-  }
-  #upper-aside>img {
+}
+#upper-aside>img {
     margin-right: 20px;
-  }
-  #upper-aside>i {
+}
+#upper-aside>i {
     margin-right: 20px;
     color: #373867;
-  }
-  #upper-aside>p {
+}
+#upper-aside>p {
     display: inline-block;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-right: 2px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 20px;
     color: #373867;
-  }
-  #option-aside {
+}
+#option-aside {
     margin-top: 80px;
     margin-left: 20px;
     font-size: 15px;
-  }
-  #contact-aside {
+}
+#contact-aside {
     margin-left: 10px;
-    padding-top: 372px;
+    padding-top: 225px;
     font-size: 10px;
     color: #F13312;
-  }
-  #contact-aside>p {
+}
+#contact-aside>p {
     font-weight: bold;
     font-size: 14px;
     text-align: left;
-  }
-  .contact-option {
-    display: flex;
+}
+.contact-option {
     margin-bottom: 20px;
-  }
-  .menu-option {
-    display: flex;
-    margin-bottom: 30px;
-  }
-  .line-orange {
+}
+.menu-option {
+    margin-bottom: 50px;
+}
+.line-orange {
     margin-bottom: 20px;
     height: 2px;
     width: 85px;
     background: #F13312;
-  }
-  .text-aside:hover, i:hover{
-    color: #373867;
-  }
-  /* end side bar settings*/
-
-  /*MOBILE SETTINGS*/
-@media only screen and (max-width: 480px){
-  aside{
-    display: none;
-    background-color: #F13312;
-  }
 }
-/*END MOBILE SETTINGS*/
+.text-aside:hover, i:hover{
+    color: #373867;
+}

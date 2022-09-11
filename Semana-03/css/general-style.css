@@ -1,11 +1,9 @@
- body {
-  width: 1440px;
- }
- aside,
+aside,
  header,
  main, footer {
    font-family: 'Roboto', sans-serif;
    font-style: normal;
+   /*height: 900px;*/
  }
  h2 {
    text-align: center;
@@ -17,5 +15,7 @@
   color: #373867;
  }
  i {
-   color: #F13312;
+   color: #FFFFFF;
+   display: flex;
+   align-self: center;
  }

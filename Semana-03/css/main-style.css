@@ -1,18 +1,13 @@
-/*General settings main*/
-/*main,
-  footer {
-    padding-left: 180px;
-  }*/
 .title {
-    margin-bottom: 5px;
+    margin-bottom: 2%;
     font-size: 40px;
     color: black;
     font-weight: bold;
-  }
-  .title-bar {
+}
+.title-bar {
     height: 10px;
-    margin-right: 100px;
-    margin-left: 240px;
-    margin-bottom: 80px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 6%;
     background: #d9d9d9;
-  }
+}
