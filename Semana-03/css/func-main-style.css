@@ -1,0 +1,47 @@
+#functionalities {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#hours-log,
+#resource-management,
+#reports,
+#multiple-roles{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    width: 38%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#hours-log,
+#reports{
+    padding-left: 10%;
+}
+#resource-management,
+#multiple-roles{
+    padding-right: 7%;
+}
+.img-functionalities{
+    margin-right: 3%;
+}
+.text-functionalities{
+    font-size: 20px;
+}
+.text-functionalities>h4{
+    margin-bottom: 4%;
+    font-size: 30px;
+    font-weight: bold;
+}
+#functionalities h4:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: #F13312;
+}
+.image-zoom{
+    transition: 0.3s;
+}
+.image-zoom:hover{
+    cursor: pointer;
+    transform: scale(1.15, 1.15);
+}
