@@ -1,0 +1,55 @@
+form{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 15px;
+    color: #373867;
+}
+form > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+input, select{
+    width: 43%;
+    height: 31px;
+    margin-bottom: 8%;
+    border-radius: 5px;
+}
+select{
+    width: 39%;
+}
+label{
+    margin-bottom: 1%;
+}
+
+textarea{
+    width: 89%;
+    height: 224px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button{
+    border-radius: 5px;
+    height: 47px;
+}
+#btn-form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 89%;
+    margin-top: 1%;
+}
+button[type=submit]{
+    width: 15%;
+    background-color: #AACE9B;
+}
+button[type=reset]{
+    width: 10%;
+    background-color: #f13312;
+}
+#cross-icon,
+#email-icon {
+    margin-right: 5%;
+    color: #373867;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="descripcion"
@@ -8,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="employee, work, reports, hours log, roles, Resource, leadership, team, management,
      traceability, Productivity, Booster" />
-     <script src="https://kit.fontawesome.com/d7c9d962f7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d7c9d962f7.js" crossorigin="anonymous"></script>
     <title>Trackgenix</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/general-style.css">
@@ -26,6 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <aside>
         <div id="upper-aside">
@@ -34,34 +36,34 @@
             <i class="fa-solid fa-angle-left fa-xl"></i>
         </div>
         <nav id="option-aside">
-                    <a class="menu-option" href="">
-                        <i class="fa-solid fa-house fa-lg"></i>
-                        <p class="text-aside">Home</p>
-                    </a>
-                    <a class="menu-option" href="">
-                        <i class="fa-solid fa-user fa-lg"></i>
-                        <p class="text-aside">SignUp</p>
-                    </a>
-                    <a class="menu-option" href="">
-                        <i class="fa-solid fa-user fa-lg"></i>
-                        <p class="text-aside">LogIn</p>
-                    </a>
+            <a class="menu-option" href="">
+                <i class="fa-solid fa-house fa-lg"></i>
+                <p class="text-aside">Home</p>
+            </a>
+            <a class="menu-option" href="">
+                <i class="fa-solid fa-user fa-lg"></i>
+                <p class="text-aside">SignUp</p>
+            </a>
+            <a class="menu-option" href="">
+                <i class="fa-solid fa-user fa-lg"></i>
+                <p class="text-aside">LogIn</p>
+            </a>
         </nav>
         <div id="contact-aside">
-                <p>Contact Us</p>
-                <div class="line-orange"></div>
-                <a class="contact-option" href="https://mail.google.com" target="_blank">
-                    <i class="fa-regular fa-envelope fa-xl"></i>
-                    <p class="text-aside">trackgenix@gmail.com</p>
-                </a>
-                <a class="contact-option" href="">
-                    <i class="fa-solid fa-phone fa-xl"></i>
-                    <p class="text-aside">(000) 000-0000</p>
-                </a>
-                <a class="contact-option" href="">
-                    <i id="location-icon" class="fa-solid fa-location-dot fa-xl"></i>
-                    <p class="text-aside">1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
-                </a>
+            <p>Contact Us</p>
+            <div class="line-orange"></div>
+            <a class="contact-option" href="https://mail.google.com" target="_blank">
+                <i class="fa-regular fa-envelope fa-xl"></i>
+                <p class="text-aside">trackgenix@gmail.com</p>
+            </a>
+            <a class="contact-option" href="">
+                <i class="fa-solid fa-phone fa-xl"></i>
+                <p class="text-aside">(000) 000-0000</p>
+            </a>
+            <a class="contact-option" href="">
+                <i id="location-icon" class="fa-solid fa-location-dot fa-xl"></i>
+                <p class="text-aside">1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
+            </a>
         </div>
     </aside>
     <header>
@@ -199,7 +201,7 @@
             </div>
             <div id="resource-management">
                 <img class="image-zoom img-functionalities" src="assets/Icons/resource-management.png"
-                 alt="Resource management">
+                    alt="Resource management">
                 <div class="text-functionalities">
                     <h4>Resource management</h4>
                     <p>
@@ -233,18 +235,18 @@
             <h2 class="title">Contact</h2>
             <div class="title-bar"></div>
             <form>
+
                 <div>
-                    <div>
-                        <label class="label-contact" for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name Here">
-                    </div>
-                    <select required>
-                        <option value="Contact area" selected disabled hidden>Contact area</option>
-                        <option value="Human Resources">Human Resources</option>
-                        <option value="Systems">Systems</option>
-                        <option value="Commercialization">Commercialization</option>
-                    </select>
+                    <label class="label-contact" for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name Here">
                 </div>
+                <select required>
+                    <option value="Contact area" selected disabled hidden>Contact area</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="Systems">Systems</option>
+                    <option value="Commercialization">Commercialization</option>
+                </select>
+
                 <div>
                     <label class="label-contact" for="email">Email</label>
                     <input type="text" id="email" name="email" placeholder="Your Email Here">
@@ -253,10 +255,12 @@
                     <label class="label-contact" for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your Message Here"></textarea>
                 </div>
-                <button type="submit" id="submit-btn"><i id="email-icon" class="fa-regular fa-envelope fa-sm"></i>
-                    Send message</button>
-                <button type="reset" id="reset-btn"><i id="cross-icon" class="fa-solid fa-xmark fa-sm"></i>
-                    Reset</button>
+                <div id="btn-form">
+                    <button type="submit" id="submit-btn"><i id="email-icon" class="fa-regular fa-envelope fa-sm"></i>
+                        Send message</button>
+                    <button type="reset" id="reset-btn"><i id="cross-icon" class="fa-solid fa-xmark fa-sm"></i>
+                        Reset</button>
+                </div>
             </form>
         </section>
         <section id="more-sections">
@@ -311,4 +315,5 @@
         <h6>Copyright <i class="fa fa-copyright"></i> 2022 Radium Rocket. All rights reserved</h6>
     </footer>
 </body>
+
 </html>
