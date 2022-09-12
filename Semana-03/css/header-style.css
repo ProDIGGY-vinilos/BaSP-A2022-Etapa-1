@@ -46,3 +46,9 @@ header{
     margin-right: 3%;
     background: #AACE9B;
 }
+@media only screen and (max-width: 480px){
+    #text-header{
+        margin-left: 0;
+        width: 100%;
+    }
+}

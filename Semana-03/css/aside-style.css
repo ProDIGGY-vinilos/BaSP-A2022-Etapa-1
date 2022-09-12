@@ -1,19 +1,20 @@
 /* side bar settings */
 aside {
-    /*position: i;*/
     display: flex;
     flex-direction: column;
     float: left;
-    width: 12%;
+    width: 13%;
     height: 900px;
     background-color: #FFFFFF;
     text-align: left;
 }
 #option-aside>a>i, #contact-aside>a>i {
     color: #F13312;
+    margin-right: 1%;
 }
 #option-aside > a, #contact-aside > a {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
 }
 #location-icon {
     vertical-align: 14px;
@@ -51,28 +52,39 @@ aside {
     color: #373867;
 }
 #option-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 40%;
-    margin-left: 20%;
     font-size: 15px;
 }
 #contact-aside {
-    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 140%;
     font-size: 10px;
     color: #F13312;
 }
 #contact-aside>p {
+    align-self: flex-start;
+    margin-left: 15%;
     font-weight: bold;
     font-size: 14px;
-    text-align: left;
+    flex-direction: row-reverse;
 }
 .contact-option {
     margin-bottom: 20px;
+}
+.contact-option > p{
+    margin-left: 5%;
 }
 .menu-option {
     margin-bottom: 50px;
 }
 .line-orange {
+    align-self: flex-start;
+    margin-left: 15%;
     margin-bottom: 20px;
     height: 2px;
     width: 85px;
@@ -80,4 +92,9 @@ aside {
 }
 .text-aside:hover, i:hover{
     color: #373867;
+}
+@media only screen and (max-width: 1024px){
+    aside{
+        display: none;
+    }
 }
