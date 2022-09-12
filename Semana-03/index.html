@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="descripcion"
@@ -27,13 +26,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <aside>
         <div id="upper-aside">
             <img src="assets/logo-trackgenix.png" alt="Logo Trackgenix">
-            <p>Trackgenix</p>
-            <i class="fa-solid fa-angle-left fa-xl"></i>
+            <div>
+                <p>Trackgenix</p>
+                <i class="fa-solid fa-angle-left fa-xl"></i>
+            </div>
         </div>
         <nav id="option-aside">
             <a class="menu-option" href="">
@@ -121,9 +121,9 @@
             </p>
         </section>
         <section id="why-choose-us">
+            <h2 class="title">Why choose us?</h2>
+            <div class="title-bar"></div>
             <div id="productivity-section">
-                <h2 class="title">Why choose us?</h2>
-                <div class="title-bar"></div>
                 <div class="text-why-left">
                     <h3 class="title">Productivity Booster</h3>
                     <div id="subtitle-bar-blue" class="subtitle-bar"></div>
@@ -138,10 +138,14 @@
                         a type specimen book.
                     </p>
                 </div>
-                <img class="img-why-right" src="assets/productivity.png" alt="Productivity Booster">
+                <div class="img-why-right-cont">
+                    <img class="img-why-right" src="assets/productivity.png" alt="Productivity Booster">
+                </div>
             </div>
             <div id="traceability-section">
-                <img class="img-why-left" src="assets/work-traceability.png" alt="work Traceability">
+                <div class="img-why-left-cont">
+                    <img class="img-why-left" src="assets/work-traceability.png" alt="work Traceability">
+                </div>
                 <div class="text-why-right">
                     <h3 class="title">Work Traceability</h3>
                     <div class="subtitle-bar subtitle-bar-right"></div>
@@ -154,7 +158,6 @@
                         scrambled it to make a type specimen book.
                     </p>
                 </div>
-
             </div>
             <div id="management-section">
                 <div class="text-why-left">
@@ -168,10 +171,14 @@
                         ullam blanditiis dolores officia!
                     </p>
                 </div>
-                <img class="img-why-right" src="assets/leadership.png" alt="Leadership and team management">
+                <div class="img-why-right-cont">
+                    <img class="img-why-right" src="assets/leadership.png" alt="Leadership and team management">
+                </div>
             </div>
             <div id="decision-making-section">
-                <img class="img-why-left" src="assets/decision-making.png" alt="Decision making">
+                <div class="img-why-left-cont">
+                    <img class="img-why-left" src="assets/decision-making.png" alt="Decision making">
+                </div>
                 <div class="text-why-right">
                     <h3 class="title">Decision making</h3>
                     <div class="subtitle-bar subtitle-bar-right"></div>
@@ -235,23 +242,23 @@
             <h2 class="title">Contact</h2>
             <div class="title-bar"></div>
             <form>
-
-                <div>
-                    <label class="label-contact" for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name Here">
+                <div id="name-contact-ls">
+                    <div>
+                        <label class="label-contact" for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name Here">
+                    </div>
+                    <select required>
+                        <option value="Contact area" selected disabled hidden>Contact area</option>
+                        <option value="Human Resources">Human Resources</option>
+                        <option value="Systems">Systems</option>
+                        <option value="Commercialization">Commercialization</option>
+                    </select>
                 </div>
-                <select required>
-                    <option value="Contact area" selected disabled hidden>Contact area</option>
-                    <option value="Human Resources">Human Resources</option>
-                    <option value="Systems">Systems</option>
-                    <option value="Commercialization">Commercialization</option>
-                </select>
-
                 <div>
                     <label class="label-contact" for="email">Email</label>
                     <input type="text" id="email" name="email" placeholder="Your Email Here">
                 </div>
-                <div>
+                <div id="textarea">
                     <label class="label-contact" for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your Message Here"></textarea>
                 </div>

@@ -14,34 +14,56 @@
     background: #FFFFFF;
 }
 /*/////////////////////////*/
+#decision-making-section,
+#traceability-section,
+#management-section,
+#productivity-section{
+    display: flex;
+}
 .text-why-left {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 60%;
     margin-top: 5%;
     margin-left: 10%;
-    margin-right: 5%;
-    /*margin-bottom: 15%;*/
     vertical-align: top;
     font-size: 30px;
 }
+.img-why-right-cont{
+    display: flex;
+    height: fit-content;
+    width: 40%;
+    justify-content: space-around;
+    margin-top: 4%;
+    margin-right: 10%;
+    margin-left: 3%;
+}
 .img-why-right {
+    display: block;
+    width: 100%;
     margin-top: 4%;
 }
 /*////////////*/
-.img-why-left {
-    display: inline;
+.img-why-left-cont{
+    display: flex;
+    height: fit-content;
+    width: 40%;
+    justify-content: space-around;
     margin-top: 4%;
     margin-left: 10%;
 }
+.img-why-left {
+    display: block;
+    width: 100%;
+}
 .text-why-right {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 60%;
     margin-top: 5%;
-    margin-right: 5%;
     vertical-align: top;
     font-size: 30px;
+    margin-right: 10%;
 }
 .text-why-right > .title{
     margin-left: 15%;
@@ -57,10 +79,11 @@
     background-color: #d9d9d9;
 }
 #management-section, #productivity-section {
-    padding-top: 14%;
     padding-bottom: 14%;
 }
-
+#management-section{
+    padding-top: 14%;
+}
 
 #why-choose-us h3:hover {
     transition: 0.3s;

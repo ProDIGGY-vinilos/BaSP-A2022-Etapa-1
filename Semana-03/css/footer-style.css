@@ -1,0 +1,23 @@
+footer{
+    height: 180px;
+    background-color: #AACE9B;
+    background-size: cover;
+    text-align: center;
+    font-size: 12px;
+}
+footer > h6 {
+    margin-top: 2%;
+    text-align: center;
+}
+#social-media > a{
+    margin-left: 5%;
+}
+#social-media{
+    padding-top: 2%;
+}
+.image-zoom-footer{
+    transition: 0.3s;
+  }
+.image-zoom-footer:hover {
+    transform: scale(1.2, 1.2);
+}
