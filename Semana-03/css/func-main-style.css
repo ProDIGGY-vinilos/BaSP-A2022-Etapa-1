@@ -45,3 +45,27 @@
     cursor: pointer;
     transform: scale(1.15, 1.15);
 }
+@media only screen and (max-width: 480px){
+    #hours-log,
+    #resource-management,
+    #reports,
+    #multiple-roles{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 90%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #functionalities-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-functionalities{
+        text-align: center;
+    }
+    .img-functionalities{
+        margin-right: 0;
+    }
+}

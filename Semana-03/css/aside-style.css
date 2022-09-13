@@ -31,9 +31,9 @@ aside {
     flex-direction: column;
 }
 #upper-aside>img {
-    margin-top: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 #upper-aside > div{
     flex-direction: row;
@@ -62,7 +62,7 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 140%;
+    padding-top: 100%;
     font-size: 10px;
     color: #F13312;
 }

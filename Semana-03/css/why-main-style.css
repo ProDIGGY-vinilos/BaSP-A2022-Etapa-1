@@ -104,4 +104,13 @@
         margin-right: 0;
         width: 100%;
     }
+    .p-why-left,
+    .p-why-right,
+    .text-why-left > .title,
+    .text-why-right> .title{
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        align-self: center;
+    }
 }

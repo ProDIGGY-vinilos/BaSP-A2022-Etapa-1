@@ -56,10 +56,14 @@ button{
 }
 button[type=submit]{
     width: 15%;
+    min-width: 80px;
+    max-width: 155px;
     background-color: #AACE9B;
 }
 button[type=reset]{
     width: 10%;
+    min-width: 55px;
+    max-width: 81px;
     background-color: #f13312;
 }
 #cross-icon,
