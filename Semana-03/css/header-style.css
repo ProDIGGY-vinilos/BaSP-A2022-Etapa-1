@@ -19,7 +19,7 @@ header{
 #text-header>div,
 #text-header>h2,
 #text-header>p {
-    margin-left: 5%;
+    margin-left: 10%;
     text-align: left;
 }
 #text-header>h1 {
@@ -50,5 +50,10 @@ header{
     #text-header{
         margin-left: 0;
         width: 100%;
+    }
+}
+@media only screen and (max-width: 768px){
+    #text-header{
+        width: 65%;
     }
 }

@@ -69,3 +69,18 @@
         margin-right: 0;
     }
 }
+@media only screen and (max-width: 768px){
+    #hours-log,
+    #resource-management,
+    #reports,
+    #multiple-roles{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .text-functionalities{
+        text-align: center;
+    }
+    .img-functionalities{
+        margin-right: 0;
+    }
+}

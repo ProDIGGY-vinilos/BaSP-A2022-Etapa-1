@@ -30,3 +30,8 @@
 #more-sections div h5:hover{
     color: #F13312;
 }
+@media only screen and (max-width: 480px){
+    #more-sections {
+        height: 150px;
+    }
+}

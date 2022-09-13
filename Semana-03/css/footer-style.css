@@ -21,3 +21,11 @@ footer > h6 {
 .image-zoom-footer:hover {
     transform: scale(1.2, 1.2);
 }
+@media only screen and (max-width: 480px){
+    footer{
+        height: 110px;
+    }
+    #social-media{
+        padding-top: 3%;
+    }
+}
