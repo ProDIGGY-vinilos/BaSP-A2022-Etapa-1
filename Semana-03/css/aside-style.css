@@ -5,6 +5,7 @@ aside {
     flex: 1 0 13%;
     background-color: #FFFFFF;
     text-align: left;
+    max-width: 188px;
 }
 #option-aside>a>i, #contact-aside>a>i {
     color: #F13312;
@@ -90,7 +91,8 @@ aside {
     width: 85px;
     background: #F13312;
 }
-.text-aside:hover, i:hover{
+.text-aside:hover, #option-aside>a> i:hover,
+ #contact-aside>a>i:hover{
     color: #373867;
 }
 @media only screen and (max-width: 1024px){

@@ -1,6 +1,6 @@
 header{
     display: flex;
-    height: 900px;
+    /* height: 900px; */
     background-size: cover;
     background-image: url(../assets/office.png);
 }
@@ -46,14 +46,33 @@ header{
     margin-right: 3%;
     background: #AACE9B;
 }
-@media only screen and (max-width: 480px){
-    #text-header{
-        margin-left: 0;
-        width: 100%;
-    }
+#aside-btn-mobile{
+    display: none;
 }
+
 @media only screen and (max-width: 768px){
     #text-header{
         width: 65%;
+    }
+}
+@media only screen and (max-width: 480px){
+    #text-header{
+        margin-left: 0;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    #aside-btn-mobile{
+        display: flex;
+        align-self: flex-start;
+        margin-top: 2%;
+        margin-left: 2%;
+        font-size: 32px;
+    }
+    #aside-btn-mobile>i{
+        color: #AACE9B;
+    }
+    #aside-btn-mobile>i:hover{
+        color: #f13312;
     }
 }
