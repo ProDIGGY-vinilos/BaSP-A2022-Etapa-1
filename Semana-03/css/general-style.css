@@ -1,3 +1,7 @@
+body{
+  overflow: hidden;
+  height: 100vh;
+}
 aside,
  header,
  main, footer {
@@ -19,3 +23,13 @@ aside,
    display: flex;
    align-self: center;
  }
+
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+.wrapper-inner{
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}

@@ -4,6 +4,7 @@ footer{
     background-size: cover;
     text-align: center;
     font-size: 12px;
+    padding-bottom: 15px;
 }
 footer > h6 {
     margin-top: 2%;

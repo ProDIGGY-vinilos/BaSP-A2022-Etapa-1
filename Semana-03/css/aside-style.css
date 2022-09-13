@@ -2,9 +2,7 @@
 aside {
     display: flex;
     flex-direction: column;
-    float: left;
-    width: 13%;
-    height: 900px;
+    flex: 1 0 13%;
     background-color: #FFFFFF;
     text-align: left;
 }
@@ -29,11 +27,13 @@ aside {
     background-color: hsla(239, 30%, 31%, 0.40);
     text-align: center;
     flex-direction: column;
+    max-height: 250px;
 }
 #upper-aside>img {
     margin-top: 10%;
     margin-left: 20%;
     margin-right: 20%;
+    max-height: 200px;
 }
 #upper-aside > div{
     flex-direction: row;
@@ -55,14 +55,14 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40%;
+    margin-top: 50px;
     font-size: 15px;
 }
 #contact-aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100%;
+    padding-top: 190px;
     font-size: 10px;
     color: #F13312;
 }
