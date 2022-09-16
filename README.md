@@ -8,14 +8,17 @@
 
 
 
-### Week 00
+### Week 00 FIGMA
 With my team did the design of the landing page and the rest of layouts in figma
-### Week 01
+### Week 01 HTML
 Start writing the landing page in HTML
-### Week 02
+### Week 02 CSS
 Styling the landing page with CSS
-### Week 03
+### [Week 03 FLEXBOX](https://prodiggy-vinilos.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html)
 Create the Mobile view with a responsive design
-### Week 04
+### [Week 04 JAVASCRIPT](https://prodiggy-vinilos.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html)
+Started practising with Javascript
+### Week 05
+> Upcoming
 
 _Cristian Gerster_
