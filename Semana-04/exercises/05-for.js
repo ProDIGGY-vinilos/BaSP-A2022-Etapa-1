@@ -1,4 +1,5 @@
 console.log('--EXERCISE 5: FOR');
+/*
 // Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para mostrar
 //  una alerta utilizando cada una de las palabras.
 console.log('-Exercise 5.a:');
@@ -32,3 +33,4 @@ for (var i = 0; i < emptyArraay.length; i++) {
     emptyArraay[i] = i;
 }
 console.log(emptyArraay);
+*/
