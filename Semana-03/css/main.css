@@ -1,3 +1,11 @@
+#who-we-are {
+    margin-top: 8%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #373867;
+}
 .title {
     margin-bottom: 2%;
     padding-top: 5%;
@@ -12,278 +20,88 @@
     margin-bottom: 6%;
     background: #d9d9d9;
 }
-/* WHO WE ARE */
-#who-we-are>h2 {
-    margin-bottom: 15px;
+#more-sections {
+    height: 150px;
 }
-#who-we-are {
-    margin-top: 8%;
-    line-height: 30px;
+.img-why-left-cont, .img-why-right-cont{
+    display: none;
+}
+.text-why-left, .text-why-right{
+    width: 95%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 23px;
+}
+.subtitle-bar,#subtitle-bar-blue,
+#subtitle-bar-grey,.subtitle-bar-right{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+.p-why-left,
+.p-why-right,
+.text-why-left > .title,
+.text-why-right> .title{
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    color: #373867;
-}
-#who-we-are>p {
-    margin-bottom: 3%;
-    margin-right: 11%;
-    margin-left: 11%;
-}
-#text-green {
-    color: #AACE9B;
-    font-size: 18px;
-    font-weight: 400;
-}
-/* WHY CHOOSE US */
-.subtitle-bar {
-    height: 4px;
-    width: 112%;
-    margin-bottom: 7%;
-}
-#subtitle-bar-blue{
-    margin-top: 2%;
-    background: #286276;
-}
-#subtitle-bar-grey {
-    background: #d9d9d9;
-}
-.subtitle-bar-right {
-    margin-left: -5%;
-    background: #FFFFFF;
-}
-#decision-making-section,
-#traceability-section,
-#management-section,
-#productivity-section{
-    display: flex;
-}
-.text-why-left {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin-top: 5%;
-    margin-left: 10%;
-    vertical-align: top;
-    font-size: 30px;
-}
-.img-why-right-cont{
-    display: flex;
-    height: fit-content;
-    width: 40%;
-    justify-content: space-around;
-    margin-top: 4%;
-    margin-right: 10%;
-    margin-left: 3%;
-}
-.img-why-right {
-    display: block;
-    width: 100%;
-    margin-top: 4%;
-}
-.img-why-left-cont{
-    display: flex;
-    height: fit-content;
-    width: 40%;
-    justify-content: space-around;
-    margin-top: 4%;
-    margin-left: 10%;
-}
-.img-why-left {
-    display: block;
-    width: 100%;
-}
-.text-why-right {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin-top: 5%;
-    vertical-align: top;
-    font-size: 30px;
-    margin-right: 10%;
-}
-.text-why-right > .title{
-    margin-left: 15%;
-}
-.p-why-right {
-    margin-left: 15%;
-}
-#traceability-section,
-#decision-making-section {
-    padding-top: 14%;
-    padding-bottom: 14%;
-    background-color: #d9d9d9;
-}
-#management-section, #productivity-section {
-    padding-bottom: 14%;
-}
-#management-section{
-    padding-top: 14%;
-}
-#why-choose-us h3:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    color: #F13312;
-}
-/* FUNCTIONALITIES */
-#functionalities {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    align-self: center;
 }
 #hours-log,
 #resource-management,
 #reports,
 #multiple-roles{
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+    padding-right: 0;
+    padding-left: 0;
+}
+#functionalities-content{
+    display: flex;
     flex-direction: row;
-    width: 38%;
-    padding-bottom: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-#hours-log,
-#reports{
-    padding-left: 10%;
-}
-#resource-management,
-#multiple-roles{
-    padding-right: 7%;
-}
-.img-functionalities{
-    margin-right: 3%;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .text-functionalities{
-    font-size: 20px;
+    text-align: center;
 }
-.text-functionalities>h4{
-    margin-bottom: 4%;
-    font-size: 30px;
-    font-weight: bold;
-}
-#functionalities h4:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    color: #F13312;
-}
-.image-zoom{
-    transition: 0.3s;
-}
-.image-zoom:hover{
-    cursor: pointer;
-    transform: scale(1.15, 1.15);
-}
-/* CONTACT */
-form{
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 15px;
-    color: #373867;
+.img-functionalities{
+    margin-right: 0;
 }
 #name-contact-ls{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
 #name-contact-ls > div{
-    width: 50%;
+    width: 100%;
+    margin-bottom: 4%;
+}
+select{
+    width: 100%;
 }
 form > div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
-}
-input, select{
-    width: 98%;
-    height: 31px;
-    margin-bottom: 5%;
-    border-radius: 5px;
-}
-select{
-    margin-bottom: 1%;
-    width: 39%;
-}
-label{
-    margin-bottom: 1%;
-}
-#textarea{
     width: 100%;
+    margin-bottom: 4%;
 }
 textarea{
-    height: 224px;
+    height: 110px;
     border-radius: 5px;
-    font-size: 15px;
-}
-button{
-    border-radius: 5px;
-    height: 47px;
-    border: none;
-    transition: 0.4s;
-}
-#btn-form{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 1%;
 }
 button[type=submit]{
-    width: 15%;
-    min-width: 80px;
-    max-width: 155px;
-    background-color: #AACE9B;
+    width: 35%;
 }
 button[type=reset]{
-    width: 10%;
-    min-width: 55px;
-    max-width: 81px;
-    background-color: #f13312;
+    width: 20%;
 }
-#cross-icon,
-#email-icon {
-    margin-right: 5%;
-    color: #373867;
-}
-button:hover{
-    cursor: pointer;
-    box-shadow: 1px 5px 5px  gray;
-}
-/* MORE SECTIONS*/
-#more-sections {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    height: 247px;
-    margin-top: 5%;
-    background-image: url(../assets/more-sections.png);
-    background-size: cover;
-    text-align: center;
-}
-.ol-more-sections > h5{
-    margin-bottom: 1%;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: left;
-}
-.ol-more-sections{
-    display: flex;
-    flex-direction: column;
-    color: #373867;
-    font-size: 14px;
-    text-align: left;
-    font-weight: 400;
-    align-items: flex-start;
-}
-#support-ol{
-   margin-right: 0px;
-}
-#more-sections div h5:hover{
-    color: #F13312;
-}
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 481px){
     #hours-log,
     #resource-management,
     #reports,
@@ -304,85 +122,273 @@ button:hover{
         width: 20%;
     }
 }
-@media only screen and (max-width: 480px){
-    #more-sections {
-        height: 150px;
+@media only screen and (min-width: 1024px){
+    /* WHO WE ARE */
+    #who-we-are>h2 {
+        margin-bottom: 15px;
     }
-    .img-why-left-cont, .img-why-right-cont{
-        display: none;
+    
+    #who-we-are>p {
+        margin-bottom: 3%;
+        margin-right: 11%;
+        margin-left: 11%;
     }
-    .text-why-left, .text-why-right{
-        width: 95%;
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 23px;
+    #text-green {
+        color: #AACE9B;
+        font-size: 18px;
+        font-weight: 400;
     }
-    .subtitle-bar,#subtitle-bar-blue,
-    #subtitle-bar-grey,.subtitle-bar-right{
-        margin-left: 0;
-        margin-right: 0;
+    /* WHY CHOOSE US */
+    .subtitle-bar {
+        height: 4px;
+        width: 112%;
+        margin-bottom: 7%;
+    }
+    #subtitle-bar-blue{
+        margin-top: 2%;
+        background: #286276;
+    }
+    #subtitle-bar-grey {
+        background: #d9d9d9;
+    }
+    .subtitle-bar-right {
+        margin-left: -5%;
+        background: #FFFFFF;
+    }
+    #decision-making-section,
+    #traceability-section,
+    #management-section,
+    #productivity-section{
+        display: flex;
+    }
+    .text-why-left {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-top: 5%;
+        margin-left: 10%;
+        vertical-align: top;
+        font-size: 30px;
+    }
+    .img-why-right-cont{
+        display: flex;
+        height: fit-content;
+        width: 40%;
+        justify-content: space-around;
+        margin-top: 4%;
+        margin-right: 10%;
+        margin-left: 3%;
+    }
+    .img-why-right {
+        display: block;
+        width: 100%;
+        margin-top: 4%;
+    }
+    .img-why-left-cont{
+        display: flex;
+        height: fit-content;
+        width: 40%;
+        justify-content: space-around;
+        margin-top: 4%;
+        margin-left: 10%;
+    }
+    .img-why-left {
+        display: block;
         width: 100%;
     }
-    .p-why-left,
-    .p-why-right,
-    .text-why-left > .title,
-    .text-why-right> .title{
-        margin-left: 5%;
-        margin-right: 5%;
-        text-align: center;
-        align-self: center;
+    .text-why-right {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-top: 5%;
+        vertical-align: top;
+        font-size: 30px;
+        margin-right: 10%;
+    }
+    .text-why-right > .title{
+        margin-left: 15%;
+    }
+    .p-why-right {
+        margin-left: 15%;
+    }
+    #traceability-section,
+    #decision-making-section {
+        padding-top: 14%;
+        padding-bottom: 14%;
+        background-color: #d9d9d9;
+    }
+    #management-section, #productivity-section {
+        padding-bottom: 14%;
+    }
+    #management-section{
+        padding-top: 14%;
+    }
+    #why-choose-us h3:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        color: #F13312;
+    }
+    /* FUNCTIONALITIES */
+    #functionalities {
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
     #hours-log,
     #resource-management,
     #reports,
     #multiple-roles{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        width: 90%;
-        padding-right: 0;
-        padding-left: 0;
-    }
-    #functionalities-content{
-        display: flex;
-        flex-direction: column;
+        display: inline-flex;
+        flex-direction: row;
+        width: 38%;
+        padding-bottom: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
         align-items: center;
     }
-    .text-functionalities{
-        text-align: center;
+    #hours-log,
+    #reports{
+        padding-left: 10%;
+    }
+    #resource-management,
+    #multiple-roles{
+        padding-right: 7%;
     }
     .img-functionalities{
-        margin-right: 0;
+        margin-right: 3%;
+    }
+    .text-functionalities{
+        font-size: 20px;
+    }
+    .text-functionalities>h4{
+        margin-bottom: 4%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #functionalities h4:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        color: #F13312;
+    }
+    .image-zoom{
+        transition: 0.3s;
+    }
+    .image-zoom:hover{
+        cursor: pointer;
+        transform: scale(1.15, 1.15);
+    }
+    /* CONTACT */
+    form{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 15px;
+        color: #373867;
     }
     #name-contact-ls{
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
+        flex-direction: row;
         width: 100%;
+        justify-content: space-between;
     }
     #name-contact-ls > div{
-        width: 100%;
-        margin-bottom: 4%;
-    }
-    select{
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 45%;
     }
     form > div {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 100%;
-        margin-bottom: 4%;
+        width: 45%;
     }
-    textarea{
-        height: 110px;
+    input, select{
+        width: 98%;
+        height: 31px;
+        margin-bottom: 5%;
+        border: 1px solid #ccc;
         border-radius: 5px;
     }
+    select{
+        margin-bottom: 1%;
+        width: 99%;
+    }
+    label{
+        margin-bottom: 1%;
+    }
+    #textarea{
+        width: 100%;
+    }
+    textarea{
+        height: 224px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 15px;
+    }
+    button{
+        border-radius: 5px;
+        height: 47px;
+        border: none;
+        transition: 0.4s;
+    }
+    #btn-form{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 1%;
+    }
     button[type=submit]{
-        width: 35%;
+        width: 15%;
+        min-width: 80px;
+        max-width: 155px;
+        background-color: #AACE9B;
     }
     button[type=reset]{
-        width: 20%;
+        width: 10%;
+        min-width: 55px;
+        max-width: 81px;
+        background-color: #f13312;
+    }
+    #cross-icon,
+    #email-icon {
+        margin-right: 5%;
+        color: #373867;
+    }
+    button:hover{
+        cursor: pointer;
+        box-shadow: 1px 5px 5px  gray;
+    }
+    /* MORE SECTIONS*/
+    #more-sections {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        height: 247px;
+        margin-top: 5%;
+        background-image: url(../assets/more-sections.png);
+        background-size: cover;
+        text-align: center;
+    }
+    .ol-more-sections > h5{
+        margin-bottom: 1%;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: left;
+    }
+    .ol-more-sections{
+        display: flex;
+        flex-direction: column;
+        color: #373867;
+        font-size: 14px;
+        text-align: left;
+        font-weight: 400;
+        align-items: flex-start;
+    }
+    #support-ol{
+    margin-right: 0px;
+    }
+    #more-sections div h5:hover{
+        color: #F13312;
     }
 }
+

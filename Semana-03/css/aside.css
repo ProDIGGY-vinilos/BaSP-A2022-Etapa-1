@@ -4,7 +4,6 @@ aside {
     flex-direction: column;
     flex: 1 0 13%;
     justify-content: space-between;
-    height: 100vh;
     background-color: #FFFFFF;
     text-align: left;
     max-width: 188px;

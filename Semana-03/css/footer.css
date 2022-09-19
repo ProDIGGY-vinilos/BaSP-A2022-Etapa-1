@@ -22,6 +22,9 @@ footer > h6 {
 .image-zoom-footer:hover {
     transform: scale(1.2, 1.2);
 }
+h6 > i{
+    color: black;
+}
 @media only screen and (max-width: 480px){
     footer{
         height: 110px;

@@ -1,6 +1,5 @@
 header{
     display: flex;
-    /* height: 900px; */
     background-size: cover;
     background-image: url(../assets/office.png);
 }
@@ -8,7 +7,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 900px;
+    height: 100vh;
     margin-left: 10%;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(2px);
@@ -52,6 +51,7 @@ h1 {
 @media only screen and (max-width: 1024px){
     #aside-btn-mobile{
         display: flex;
+        position: fixed;
         align-self: flex-start;
         margin-top: 2%;
         margin-left: 2%;
@@ -71,7 +71,7 @@ h1 {
 }
 @media only screen and (max-width: 480px){
     #text-header{
-        margin-left: 0;
+        display: flex;
         width: 80%;
     }
 }
