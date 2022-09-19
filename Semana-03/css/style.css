@@ -1,0 +1,34 @@
+body{
+  /* display: flex; */
+  height: 100%;
+}
+aside,
+header,
+main, footer {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  /* height: 900px; */
+}
+h2 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+li > a{
+ color: #373867;
+}
+i {
+  display: flex;
+  align-self: center;
+  color: #FFFFFF;
+}
+.wrapper{
+  display: flex;
+  overflow: hidden;
+}
+.wrapper-inner{
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}

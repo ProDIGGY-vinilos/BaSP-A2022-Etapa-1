@@ -1,9 +1,9 @@
 .title {
     margin-bottom: 2%;
+    padding-top: 5%;
     font-size: 40px;
     color: black;
     font-weight: bold;
-    padding-top: 5%;
 }
 .title-bar {
     height: 10px;
@@ -51,7 +51,6 @@
     margin-left: -5%;
     background: #FFFFFF;
 }
-/*/////////////////////////*/
 #decision-making-section,
 #traceability-section,
 #management-section,
@@ -81,7 +80,6 @@
     width: 100%;
     margin-top: 4%;
 }
-/*////////////*/
 .img-why-left-cont{
     display: flex;
     height: fit-content;
@@ -125,32 +123,6 @@
     transition: 0.3s;
     cursor: pointer;
     color: #F13312;
-}
-@media only screen and (max-width: 480px){
-    .img-why-left-cont, .img-why-right-cont{
-        display: none;
-    }
-    .text-why-left, .text-why-right{
-        width: 95%;
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 23px;
-    }
-    .subtitle-bar,#subtitle-bar-blue,
-    #subtitle-bar-grey,.subtitle-bar-right{
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-    }
-    .p-why-left,
-    .p-why-right,
-    .text-why-left > .title,
-    .text-why-right> .title{
-        margin-left: 5%;
-        margin-right: 5%;
-        text-align: center;
-        align-self: center;
-    }
 }
 /* FUNCTIONALITIES */
 #functionalities {
@@ -199,45 +171,6 @@
 .image-zoom:hover{
     cursor: pointer;
     transform: scale(1.15, 1.15);
-}
-@media only screen and (max-width: 480px){
-    #hours-log,
-    #resource-management,
-    #reports,
-    #multiple-roles{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        width: 90%;
-        padding-right: 0;
-        padding-left: 0;
-    }
-    #functionalities-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .text-functionalities{
-        text-align: center;
-    }
-    .img-functionalities{
-        margin-right: 0;
-    }
-}
-@media only screen and (max-width: 768px){
-    #hours-log,
-    #resource-management,
-    #reports,
-    #multiple-roles{
-        display: inline-flex;
-        flex-direction: column;
-    }
-    .text-functionalities{
-        text-align: center;
-    }
-    .img-functionalities{
-        margin-right: 0;
-    }
 }
 /* CONTACT */
 form{
@@ -317,48 +250,6 @@ button:hover{
     cursor: pointer;
     box-shadow: 1px 5px 5px  gray;
 }
-@media only screen and (max-width: 480px){
-    #name-contact-ls{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-    }
-    #name-contact-ls > div{
-        width: 100%;
-        margin-bottom: 4%;
-    }
-    select{
-        width: 100%;
-    }
-    form > div {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-bottom: 4%;
-    }
-    textarea{
-        height: 110px;
-        border-radius: 5px;
-        font-size: 15px;
-    }
-    button[type=submit]{
-        width: 35%;
-    }
-    button[type=reset]{
-        width: 20%;
-    }
-}
-@media only screen and (max-width: 768px){
-    button[type=submit]{
-        width: 35%;
-    }
-    button[type=reset]{
-        width: 20%;
-    }
-}
 /* MORE SECTIONS*/
 #more-sections {
     display: flex;
@@ -392,8 +283,106 @@ button:hover{
 #more-sections div h5:hover{
     color: #F13312;
 }
+@media only screen and (max-width: 768px){
+    #hours-log,
+    #resource-management,
+    #reports,
+    #multiple-roles{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .text-functionalities{
+        text-align: center;
+    }
+    .img-functionalities{
+        margin-right: 0;
+    }
+    button[type=submit]{
+        width: 35%;
+    }
+    button[type=reset]{
+        width: 20%;
+    }
+}
 @media only screen and (max-width: 480px){
     #more-sections {
         height: 150px;
+    }
+    .img-why-left-cont, .img-why-right-cont{
+        display: none;
+    }
+    .text-why-left, .text-why-right{
+        width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 23px;
+    }
+    .subtitle-bar,#subtitle-bar-blue,
+    #subtitle-bar-grey,.subtitle-bar-right{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .p-why-left,
+    .p-why-right,
+    .text-why-left > .title,
+    .text-why-right> .title{
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        align-self: center;
+    }
+    #hours-log,
+    #resource-management,
+    #reports,
+    #multiple-roles{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 90%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #functionalities-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-functionalities{
+        text-align: center;
+    }
+    .img-functionalities{
+        margin-right: 0;
+    }
+    #name-contact-ls{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+    #name-contact-ls > div{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    select{
+        width: 100%;
+    }
+    form > div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    textarea{
+        height: 110px;
+        border-radius: 5px;
+    }
+    button[type=submit]{
+        width: 35%;
+    }
+    button[type=reset]{
+        width: 20%;
     }
 }

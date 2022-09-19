@@ -15,14 +15,14 @@ header{
     color: #FFFFFF;
     text-align: left;
 }
-#text-header>h1,
+h1,
 #text-header>div,
 #text-header>h2,
 #text-header>p {
     margin-left: 10%;
     text-align: left;
 }
-#text-header>h1 {
+h1 {
     margin-top: 30%;
     font-size: 40px;
     font-weight: 500;
@@ -49,18 +49,6 @@ header{
 #aside-btn-mobile{
     display: none;
 }
-
-@media only screen and (max-width: 768px){
-    #text-header{
-        width: 65%;
-    }
-}
-@media only screen and (max-width: 480px){
-    #text-header{
-        margin-left: 0;
-        width: 80%;
-    }
-}
 @media only screen and (max-width: 1024px){
     #aside-btn-mobile{
         display: flex;
@@ -74,5 +62,16 @@ header{
     }
     #aside-btn-mobile>i:hover{
         color: #f13312;
+    }
+}
+@media only screen and (max-width: 768px){
+    #text-header{
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 480px){
+    #text-header{
+        margin-left: 0;
+        width: 80%;
     }
 }
