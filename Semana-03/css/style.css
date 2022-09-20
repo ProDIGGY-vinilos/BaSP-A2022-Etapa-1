@@ -1,4 +1,4 @@
-body{
+body {
   display: flex;
   height: 100vh;
 }
@@ -8,13 +8,18 @@ main, footer {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
 }
+h1 {
+  margin-top: 30%;
+  font-size: 40px;
+  font-weight: 500;
+}
 h2 {
   text-align: center;
 }
 a {
   text-decoration: none;
 }
-li > a{
+li > a {
  color: #373867;
 }
 i {
@@ -22,11 +27,11 @@ i {
   align-self: center;
   color: #FFFFFF;
 }
-.wrapper{
+.wrapper {
   display: flex;
   overflow: hidden;
 }
-.wrapper-inner{
+.wrapper-inner {
   overflow-y: auto;
   display: flex;
   flex-direction: column;

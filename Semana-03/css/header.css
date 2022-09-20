@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     background-size: cover;
     background-image: url(../assets/office.png);
@@ -6,7 +6,7 @@ header{
 #text-header {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 80%;
     height: 100vh;
     margin-left: 10%;
     background-color: rgba(0, 0, 0, 0.3);
@@ -15,23 +15,18 @@ header{
     text-align: left;
 }
 h1,
-#text-header>div,
-#text-header>h2,
-#text-header>p {
+#text-header > div,
+#text-header > h2,
+#text-header  >p {
     margin-left: 10%;
     text-align: left;
 }
-h1 {
-    margin-top: 30%;
-    font-size: 40px;
-    font-weight: 500;
-}
-#text-header>h2 {
+#text-header > h2 {
     margin-bottom: 20%;
     font-size: 20px;
     font-weight: 400;
 }
-#text-header>p {
+#text-header > p {
     width: 75%;
     margin-bottom: 15%;
     font-size: 16px;
@@ -45,33 +40,35 @@ h1 {
     margin-right: 3%;
     background: #AACE9B;
 }
-#aside-btn-mobile{
-    display: none;
+#aside-btn-mobile {
+    display: flex;
+    position: fixed;
+    align-self: flex-start;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 32px;
 }
-@media only screen and (max-width: 1024px){
-    #aside-btn-mobile{
-        display: flex;
-        position: fixed;
-        align-self: flex-start;
-        margin-top: 2%;
-        margin-left: 2%;
-        font-size: 32px;
-    }
-    #aside-btn-mobile>i{
-        color: #AACE9B;
-    }
-    #aside-btn-mobile>i:hover{
-        color: #f13312;
-    }
+#aside-btn-mobile > i {
+    color: #AACE9B;
 }
-@media only screen and (max-width: 768px){
-    #text-header{
-        width: 65%;
+#aside-btn-mobile > i:hover {
+    color: #f13312;
+}
+@media only screen and (min-width: 480px) {
+    #text-header {
+        width: 55%;
     }
 }
-@media only screen and (max-width: 480px){
-    #text-header{
-        display: flex;
-        width: 80%;
+@media only screen and (min-width: 768px) {
+    #text-header {
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #text-header {
+        width: 40%;
+    }
+    #aside-btn-mobile {
+        display: none;
     }
 }

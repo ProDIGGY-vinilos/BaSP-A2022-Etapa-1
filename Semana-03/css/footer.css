@@ -1,5 +1,5 @@
-footer{
-    height: 180px;
+footer {
+    height: 110px;
     background-color: #AACE9B;
     background-size: cover;
     text-align: center;
@@ -10,26 +10,26 @@ footer > h6 {
     margin-top: 2%;
     text-align: center;
 }
-#social-media > a{
+#social-media {
+    padding-top: 3%;
+}
+#social-media > a {
     margin-left: 5%;
 }
-#social-media{
-    padding-top: 2%;
-}
-.image-zoom-footer{
-    transition: 0.3s;
-  }
-.image-zoom-footer:hover {
-    transform: scale(1.2, 1.2);
-}
-h6 > i{
+h6 > i {
     color: black;
 }
-@media only screen and (max-width: 480px){
-    footer{
-        height: 110px;
+@media only screen and (min-width: 480px) {
+    footer {
+        height: 180px;
     }
-    #social-media{
-        padding-top: 3%;
+    #social-media {
+        padding-top: 2%;
+    }
+    .image-zoom-footer {
+        transition: 0.3s;
+    }
+    .image-zoom-footer:hover {
+        transform: scale(1.2, 1.2);
     }
 }
