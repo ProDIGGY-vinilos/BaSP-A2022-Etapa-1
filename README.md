@@ -1,23 +1,24 @@
 # Trackgenix
+The company GigaTech Software Solutions SA provides software development services to other companies, which have too many employees. Because of this "Trackgenix" was created.
 - This page allows employees to have a register of hours of work, rate and register their projects
 - How to open :
-    1. access to the folder "Semana-03"
-    2. open the file "index.html" on your browser
-    3. sign up or log in
-    4. enjoy all your benefits
+    1. Download/copy the repository to your PC
+    2. Access to the corresponding folder
+    3. Open the index.html
+    4. Enjoy all your benefits
 
 
 
 ### Week 00 FIGMA
-With my team did the design of the landing page and the rest of layouts in figma
+With my team did the design of the landing page and the rest of layouts in figma.
 ### Week 01 HTML
-Start writing the landing page in HTML
+We start learning HTML and start writing the landing page in HTML.
 ### Week 02 CSS
-Styling the landing page with CSS
+We start learning CSS and styling the landing page with CSS.
 ### [Week 03 FLEXBOX](https://prodiggy-vinilos.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html)
-Create the Mobile view with a responsive design
+We apply the responsive design and create the Mobile view.
 ### [Week 04 JAVASCRIPT](https://prodiggy-vinilos.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html)
-Started practising with Javascript
+We intrudeced the JavaScript language snd started practising it.
 ### Week 05
 > Upcoming
 
