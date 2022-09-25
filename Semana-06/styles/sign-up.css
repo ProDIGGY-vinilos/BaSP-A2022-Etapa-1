@@ -3,3 +3,9 @@ h1{
     margin-bottom: 5%;
     margin-left: 10%;
 }
+.error-input{
+    border: 2px solid #f13312;
+}
+.ok-input{
+    border: 2px solid #AACE9B;
+}

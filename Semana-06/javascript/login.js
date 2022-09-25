@@ -21,7 +21,6 @@ window.onload = function(){
         }
     }
     emailInput.onfocus = function() {
-        emailInput = document.querySelector('[name="email"]');
         emailInput.classList.remove('ok-input');
         emailInput.classList.remove('error-input');
     }
