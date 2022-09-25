@@ -1,0 +1,14 @@
+.wrapper, .wrapper-inner{
+    width: 100%;
+}
+h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+.error-input{
+    border: 2px solid #f13312;
+}
+.ok-input{
+    border: 2px solid #AACE9B;
+}

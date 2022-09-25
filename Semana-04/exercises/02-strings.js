@@ -8,8 +8,8 @@ console.log(stringA.toLocaleUpperCase());
 // generar un nuevo string con los primeros 5 caracteres guardando el resultado en una nueva variable
 // (utilizar substring).
 console.log('-Exercise 2.b:');
-var resultEx02B = stringA.substring(0,4);
-console.log(stringB);
+var resultEx02B = stringA.substring(0,5);
+console.log(resultEx02B);
 // Crear una variable de tipo string con al menos 10 caracteres y
 // generar un nuevo string con los últimos 3 caracteres guardando el resultado en una nueva variable
 // (utilizar substring).
