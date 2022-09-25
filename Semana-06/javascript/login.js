@@ -21,12 +21,9 @@ window.onload = function(){
         }
     }
     emailInput.onfocus = function() {
-        if (emailInput.classList.contains('ok-input')){
-            emailInput.classList.remove('ok-input');
-        }
-        if (emailInput.classList.contains('error-input')){
-            emailInput.classList.remove('error-input');
-        }
+        emailInput = document.querySelector('[name="email"]');
+        emailInput.classList.remove('ok-input');
+        emailInput.classList.remove('error-input');
     }
 
     //validate password
@@ -56,29 +53,26 @@ window.onload = function(){
         }
     }
     passInput.onfocus = function(){
-        if (passInput.classList.contains('ok-input')){
-            passInput.classList.remove('ok-input');
-        }
-        if (passInput.classList.contains('error-input')){
+        passInput = document.querySelector('[name="pass"]');
+        passInput.classList.remove('ok-input');
         passInput.classList.remove('error-input');
-        }
     }
     //button onclick
     var loginBtn = document.querySelector('#submit-btn');
     loginBtn.onclick = function(e) {
-        emailInput = (document.querySelector('[name="email"]')).value;
-        passInput = (document.querySelector('[name="pass"]')).value;
+        e.preventDefault();
+        emailContent = (document.querySelector('[name="email"]')).value;
+        passContent = (document.querySelector('[name="pass"]')).value;
         if (validatePassContent && validateEmailContent) {
             alert('Login successfull!');
-            alert('Welcome: '+emailInput+' Pass: '+passInput);
+            alert('Welcome: '+emailContent+' Pass: '+passContent);
         } else{
             if (!validatePassContent) {
-                alert('Password incorrect: '+ passInput);
+                alert('Password incorrect: '+ passContent);
             } if(!validateEmailContent) {
-                alert('Email incorrect: '+ emailInput);
+                alert('Email incorrect: '+ emailContent);
             }
         }
-        e.preventDefault();
     }
     //reset fields
     var resetBtn = document.querySelector('#reset-btn');
