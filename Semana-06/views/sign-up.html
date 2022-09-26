@@ -15,8 +15,8 @@
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <link rel="stylesheet" type="text/css" href="../styles/aside.css">
     <link rel="stylesheet" type="text/css" href="../styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="../styles/sign-up.css">
-    <script src="../javascript/sign-up.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/employee-signup.css">
+    <script src="../javascript/employee-signup.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,15 +33,15 @@
                 </div>
             </div>
             <nav id="option-aside">
-                <a class="menu-option" href="">
+                <a class="menu-option" href="../views/index.html">
                     <i class="fa-solid fa-house fa-lg"></i>
                     <p class="text-aside">Home</p>
                 </a>
-                <a class="menu-option" href="">
+                <a class="menu-option" href="../views/sign-up.html">
                     <i class="fa-solid fa-user fa-lg"></i>
                     <p class="text-aside">SignUp</p>
                 </a>
-                <a class="menu-option" href="">
+                <a class="menu-option" href="../views/login.html">
                     <i class="fa-solid fa-user fa-lg"></i>
                     <p class="text-aside">LogIn</p>
                 </a>
@@ -67,43 +67,57 @@
             <header>
                 <div id="aside-btn-mobile"><i class="fa-sharp fa-solid fa-bars"></i></div>
                 <h1>SignUp</h1>
+                <div class="title-bar"></div>
             </header>
             <main>
                 <form>
                     <div id="name-contact-ls">
-                        <label class="label-contact" for="name">Name</label>
-                        <input type="text" name="name" placeholder="Your name here">
+                        <div>
+                            <label class="label-contact" for="name">Name</label>
+                            <input type="text" name="name" placeholder="Your name here">
+                            <p name="name-p"></p>
 
-                        <label class="label-contact" for="lastname">Apellido</label>
-                        <input type="text" name="lastname" placeholder="Your lastname here">
+                            <label class="label-contact" for="lastname">Apellido</label>
+                            <input type="text" name="lastname" placeholder="Your lastname here">
+                            <p name="lastname-p"></p>
 
-                        <label class="label-contact" for="dni">DNI</label>
-                        <input type="text" name="dni" placeholder="Your DNI here">
+                            <label class="label-contact" for="dni">DNI</label>
+                            <input type="text" name="dni" placeholder="Your DNI here">
+                            <p name="dni-p"></p>
 
-                        <label class="label-contact" for="birthdate">Birthdate</label>
-                        <input type="date" name="birthdate" placeholder="Your birthdate here">
+                            <label class="label-contact" for="birthdate">Birthdate</label>
+                            <input type="date" name="birthdate" placeholder="Your birthdate here">
+                            <p name="birthdate-p"></p>
 
-                        <label class="label-contact" for="phone">Phone</label>
-                        <input type="text" name="phone" placeholder="Your phone number here">
+                            <label class="label-contact" for="phone">Phone</label>
+                            <input type="text" name="phone" placeholder="Your phone number here">
+                            <p name="phone-p"></p>
+                        </div>
+                        <div>
+                            <label class="label-contact" for="address">Address</label>
+                            <input type="text" name="address" placeholder="Your addres here">
+                            <p name="address-p"></p>
 
-                        <label class="label-contact" for="addres">Address</label>
-                        <input type="text" name="address" placeholder="Your addres here">
+                            <label class="label-contact" for="location">Location</label>
+                            <input type="text" name="location" placeholder="Your location here">
+                            <p name="location-p"></p>
 
-                        <label class="label-contact" for="location">Location</label>
-                        <input type="text" name="location" placeholder="Your location here">
+                            <label class="label-contact" for="postalcode">Postal Code</label>
+                            <input type="text" name="postalcode" placeholder="Your postal code here">
+                            <p name="postalcode-p"></p>
 
-                        <label class="label-contact" for="postalcode">Postal Code</label>
-                        <input type="text" name="postalcode" placeholder="Your postal code here">
+                            <label class="label-contact" for="email">Email</label>
+                            <input type="text" name="email" placeholder="Your email here">
+                            <p name="email-p"></p>
 
-                        <label class="label-contact" for="email">Email</label>
-                        <input type="text" name="email" placeholder="Your email here">
+                            <label class="label-contact" for="pass">Password</label>
+                            <input type="password" name="pass" placeholder="Your password here">
+                            <p name="pass-p"></p>
 
-                        <label class="label-contact" for="pass">Password</label>
-                        <input type="password" name="pass" placeholder="Your password here">
-
-                        <label class="label-contact" for="passr">Repeat password</label>
-                        <input type="password" name="passr" placeholder="Repeat password here">
-
+                            <label class="label-contact" for="passr">Repeat password</label>
+                            <input type="password" name="passr" placeholder="Repeat password here">
+                            <p name="passr-p"></p>
+                        </div>
                     </div>
                     <div id="btn-form">
                         <button type="submit" id="submit-btn">

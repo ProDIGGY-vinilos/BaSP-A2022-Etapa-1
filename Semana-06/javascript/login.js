@@ -2,6 +2,9 @@ window.onload = function(){
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     var validatePassContent, validateEmailContent;
 
+    function redirect(link) {
+        location.href=link;
+    }
     //validate email
     var emailInput = document.querySelector('[name="email"]');
     emailInput.onblur = function() {
@@ -65,6 +68,7 @@ window.onload = function(){
         if (validatePassContent && validateEmailContent) {
             alert('Login successfull!');
             alert('Welcome: '+emailContent+' Pass: '+passContent);
+            setTimeout(redirect('../views/index.html'), 5000);
         } else{
             if (!validatePassContent) {
                 alert('Password incorrect: '+ passContent);

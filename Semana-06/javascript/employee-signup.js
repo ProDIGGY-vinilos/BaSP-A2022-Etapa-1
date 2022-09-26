@@ -1,27 +1,36 @@
 window.onload = function(){
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-    var motiveError, inputContent, inputSelector, validateinputContent;
-    var validateEmailContent;
+    var motiveError, validateinputContent, validateEmailContent, access;
     // general methods
-    function correctLength(inputC ,cant) {
+    function correctLength(inputC , cant) {
         if (inputC.length <= cant) {
             validateinputContent = false;
-            motiveError ='The content field doesnt reach the minumun of characters';
+            motiveError = 'The content field doesnt reach the minumun of characters';
         }
+    }
+    function setP(input) {
+        var p = document.querySelector("[name=" + input.name + "-p"+"]");
+        p.innerHTML = motiveError;
     }
     function styleValidation(input, validate) {
         if (validate) {
             input.classList.add('ok-input');
             motiveError = '';
-        } else  {   input.classList.add('error-input'); }
+        } else  {
+            input.classList.add('error-input');
+        }
         if (input.value == '') {
+            motiveError = '';
             input.classList.remove('ok-input');
             input.classList.remove('error-input');
         }
+        setP(input);
     }
     function removeStyles(input) {
+        motiveError = '';
         input.classList.remove('ok-input');
         input.classList.remove('error-input');
+        setP(input);
     }
     function hasLetters(inputC) {
         for(var i = 0; i < inputC.length; i++){
@@ -56,9 +65,9 @@ window.onload = function(){
     }
     function hasNumAndLetters(inputC) {
         for(var i = 0; i < inputC.length; i++){
-            if((inputC.charCodeAt(i) >= 97) && (inputC.charCodeAt(i) <= 122)){// lowercase letters
+            if((inputC.charCodeAt(i) >= 97) && (inputC.charCodeAt(i) <= 122) || inputC.charCodeAt(i) == 241){// lowercase letters
                 validateinputContent = true;
-            } else if((inputC.charCodeAt(i) >= 65) && ((inputC.charCodeAt(i) <= 90))){ //uppercase letters
+            } else if((inputC.charCodeAt(i) >= 65) && ((inputC.charCodeAt(i) <= 90)) || inputC.charCodeAt(i) == 209){ //uppercase letters
                 validateinputContent = true;
             } else if((inputC.charCodeAt(i) >= 48) && (inputC.charCodeAt(i) <= 57)){// numbers
                 validateinputContent = true;
@@ -76,10 +85,10 @@ window.onload = function(){
         var inputArray = inputC.split(' ');
         for (var input of inputArray) {
             for (var i = 0; i < input.length; i++) {
-                if((input.charCodeAt(i) >= 97) && (input.charCodeAt(i) <= 122)){// lowercase letters
+                if((input.charCodeAt(i) >= 97) && (input.charCodeAt(i) <= 122) || input.charCodeAt(i) == 241){// lowercase letters
                     validateinputContent = true;
                     hasLetter = true;
-                } else if((input.charCodeAt(i) >= 65) && ((input.charCodeAt(i) <= 90))){ //uppercase letters
+                } else if((input.charCodeAt(i) >= 65) && ((input.charCodeAt(i) <= 90)) || input.charCodeAt(i) == 209){ //uppercase letters
                     validateinputContent = true;
                     hasLetter = true;
                 } else if((input.charCodeAt(i) >= 48) && (input.charCodeAt(i) <= 57)){// numbers
@@ -101,6 +110,36 @@ window.onload = function(){
             hasNumber = false;
         }
     }
+    function hasSpaceFirst(inputC) {
+        if (inputC.substring(0,1) == ' ') {
+            validateinputContent = false;
+            motiveError = 'Error there are a space in the first character';
+        }
+    }
+    function alertBtn() {
+        var pAll = document.querySelectorAll("main p");
+        var aux = 'ok';
+        for (var i = 0; i < pAll.length; i++) {
+           pValue = pAll[i].innerHTML;
+           if((pValue != '') ){
+                aux = (pAll[i].attributes.name.nodeValue).split('-');
+                var inputP = (document.querySelector("[for="+ aux[0] +"]")).innerHTML;
+                alert('Error in: '+inputP+ ': ' +pValue);
+           }
+        }
+        if(aux == 'ok'){
+            var inputAll = document.querySelectorAll('input');
+            alert(':::Welcome:::');
+            for (var i = 0; i < pAll.length; i++) {
+                var labelInput = (document.querySelector("[for="+ inputAll[i].name +"]")).innerHTML;
+                alert(labelInput+ ': ' +inputAll[i].value);
+            }
+            access = true;
+        } else{ access = false; }
+    }
+    function redirect(link) {
+        location.href=link;
+    }
     //validate NAME
     var inputName = document.querySelector('[name="name"]');
     inputName.onblur = function(){
@@ -108,6 +147,7 @@ window.onload = function(){
         removeStyles(inputName);
         hasLetters(nameContent);
         correctLength(nameContent, 3);
+        hasSpaceFirst(nameContent);
         styleValidation(inputName, validateinputContent);
     }
     inputName.onfocus = function(){
@@ -120,7 +160,9 @@ window.onload = function(){
         removeStyles(inputLastname);
         hasLetters(lastnameContent);
         correctLength(lastnameContent, 3);
+        hasSpaceFirst(lastnameContent);
         styleValidation(inputLastname, validateinputContent);
+        console.log(inputLastname.name);
     }
     inputLastname.onfocus = function(){
         removeStyles(inputLastname);
@@ -178,6 +220,7 @@ window.onload = function(){
         hasNumAndLetters(addressContent);
         addressContent = (inputAddress.value);
         hasNumOrLetters(addressContent);
+        hasSpaceFirst(addressContent);
         styleValidation(inputAddress, validateinputContent);
     }
     inputAddress.onfocus = function(){
@@ -186,12 +229,13 @@ window.onload = function(){
     //validate Location
     var inputLocation = document.querySelector('[name="location"]');
     inputLocation.onblur = function() {
-        var locationContent = inputLocation.value;
+        var locationContent = ((inputLocation.value).split(' ')).join('');
         removeStyles(inputLocation);
         correctLength(locationContent, 3);
         hasNumAndLetters(locationContent);
+        locationContent = inputLocation.value;
+        hasSpaceFirst(locationContent);
         styleValidation(inputLocation, validateinputContent);
-
     }
     inputLocation.onfocus = function(){
         removeStyles(inputLocation);
@@ -250,6 +294,14 @@ window.onload = function(){
     }
     inputPassR.onfocus = function(){
         removeStyles(inputPassR);
+    }
+    var loginBtn = document.querySelector('#submit-btn');
+    loginBtn.onclick = function(e) {
+        e.preventDefault();
+        alertBtn();
+        if (access) {
+            setTimeout(redirect('../views/index.html'), 5000);
+        }
     }
     //reset fields
     var resetBtn = document.querySelector('#reset-btn');
