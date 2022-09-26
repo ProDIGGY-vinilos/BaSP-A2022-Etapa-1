@@ -20,7 +20,7 @@ We apply the responsive design and create the Mobile view.
 ### [Week 04 JAVASCRIPT](https://prodiggy-vinilos.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html)
 We intrudeced the JavaScript language snd started practising it.
 ### [Week 05 ADDING JS TO HTML](https://prodiggy-vinilos.github.io/BaSP-A2022-Etapa-1/Semana-06/views/index.html)
-I started creating the files (login.html/css/js, employee-signup.html/css/js) then a made the forms with their styles, finally, create all the validations and concluding with the last validations in the create/login buttons
+I started creating the files (login.html/css/js, employee-signup.html/css/js) then a made the forms with their styles, finally, create all the validations and concluding with the last validations in create/login buttons
 ### Week 06
 > Upcoming
 
