@@ -6,7 +6,7 @@ window.onload = function(){
         if (inputC.length <= cant) {
             validateinputContent = false;
             motiveError = 'The content field doesnt reach the minumun of characters';
-        }
+        } else {validateinputContent = true;}
     }
     function setP(input) {
         var p = document.querySelector("[name=" + input.name + "-p"+"]");
@@ -260,6 +260,7 @@ window.onload = function(){
             validateEmailContent = true;
         } else {
             validateEmailContent = false;
+            motiveError = 'Invalid email format';
         }
         styleValidation(inputEmail, validateEmailContent);
     }
@@ -272,7 +273,7 @@ window.onload = function(){
         var passContent = inputPass.value;
         removeStyles(inputPass);
         correctLength(passContent, 7);
-        hasNumAndLetters(passContent);
+        if(validateinputContent){hasNumAndLetters(passContent);}
         styleValidation(inputPass, validateinputContent);
     }
     inputPass.onfocus = function(){

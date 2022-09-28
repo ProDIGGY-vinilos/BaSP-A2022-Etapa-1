@@ -5,59 +5,80 @@ window.onload = function(){
     function redirect(link) {
         location.href=link;
     }
+    function setP(input) {
+        var p = document.querySelector("[name=" + input.name + "-p"+"]");
+        p.innerHTML = motiveError;
+    }
+    function styleValidation(input, validate) {
+        if (validate) {
+            input.classList.add('ok-input');
+            motiveError = '';
+        } else  {
+            input.classList.add('error-input');
+        }
+        if (input.value == '') {
+            motiveError = '';
+            input.classList.remove('ok-input');
+            input.classList.remove('error-input');
+        }
+        setP(input);
+    }
+    function removeStyles(input) {
+        motiveError = '';
+        input.classList.remove('ok-input');
+        input.classList.remove('error-input');
+        setP(input);
+    }
+    function hasNumAndLetters(inputC) {
+        for(var i = 0; i < inputC.length; i++){
+            if((inputC.charCodeAt(i) >= 97) && (inputC.charCodeAt(i) <= 122) || inputC.charCodeAt(i) == 241){// lowercase letters
+                validatePassContent = true;
+            } else if((inputC.charCodeAt(i) >= 65) && ((inputC.charCodeAt(i) <= 90)) || inputC.charCodeAt(i) == 209){ //uppercase letters
+                validatePassContent = true;
+            } else if((inputC.charCodeAt(i) >= 48) && (inputC.charCodeAt(i) <= 57)){// numbers
+                validatePassContent = true;
+            }
+            else {
+                validatePassContent = false;
+                motiveError = 'The content field has invalid characters';
+                break;
+            }
+        }
+    }
+    function correctLength(inputC , cant) {
+        if (inputC.length <= cant) {
+            validatePassContent = false;
+            motiveError = 'The content field doesnt reach the minumun of characters';
+        } else {validatePassContent = true;}
+    }
     //validate email
     var emailInput = document.querySelector('[name="email"]');
     emailInput.onblur = function() {
-        emailInput.classList.remove('ok-input');
-        emailInput.classList.remove('error-input');
+        removeStyles(emailInput);
         if ((emailInput.value).match(emailExpression)) {
-            emailInput.classList.add('ok-input');
             validateEmailContent = true;
         } else {
-            emailInput.classList.add('error-input');
             validateEmailContent = false;
+            motiveError = 'Invalid email format';
         }
-        if (emailInput.value == '') {
-            emailInput.classList.remove('ok-input');
-            emailInput.classList.remove('error-input');
-            validateEmailContent = false;
-        }
+        styleValidation(emailInput, validateEmailContent);
     }
-    emailInput.onfocus = function() {
-        emailInput.classList.remove('ok-input');
-        emailInput.classList.remove('error-input');
+    emailInput.onfocus = function(){
+        removeStyles(emailInput);
     }
 
     //validate password
     var passInput = document.querySelector('[name="pass"]');
     passInput.onblur = function() {
-        passInput.classList.remove('ok-input');
-        passInput.classList.remove('error-input');
-        passContent = (passInput.value).toLowerCase();
-        for(var i = 0; i < passContent.length;i++){
-            if((passContent.charCodeAt(i) >= 97) && (passContent.charCodeAt(i) <= 122)){
-                validatePassContent = true;
-            }
-            else if((passContent.charCodeAt(i) >= 48) && ((passContent.charCodeAt(i) <= 57))){
-                validatePassContent = true;
-            }
-            else {
-                validatePassContent = false;
-            }
-        }
-        if (validatePassContent) {
-            passInput.classList.add('ok-input');
-        } else { passInput.classList.add('error-input');    }
-        if (passInput.value == '') {
-            passInput.classList.remove('ok-input');
-            passInput.classList.remove('error-input');
-            validatePassContent = false;
-        }
+        var passContent = passInput.value;
+        removeStyles(passInput);
+        correctLength(passContent, 7);
+        if(validatePassContent){hasNumAndLetters(passContent);}
+        styleValidation(passInput, validatePassContent);
     }
     passInput.onfocus = function(){
         passInput = document.querySelector('[name="pass"]');
-        passInput.classList.remove('ok-input');
-        passInput.classList.remove('error-input');
+        removeStyles(passInput)
     }
     //button onclick
     var loginBtn = document.querySelector('#submit-btn');
@@ -80,10 +101,8 @@ window.onload = function(){
     //reset fields
     var resetBtn = document.querySelector('#reset-btn');
     resetBtn.onclick = function () {
-        emailInput.classList.remove('ok-input');
-        emailInput.classList.remove('error-input');
-        passInput.classList.remove('ok-input');
-        passInput.classList.remove('error-input');
+        removeStyles(emailInput);
+        removeStyles(passInput);
         validatePassContent = false;
         validateEmailContent = false;
     }

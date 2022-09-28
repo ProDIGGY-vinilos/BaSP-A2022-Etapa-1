@@ -129,6 +129,11 @@ form {
     font-size: 15px;
     color: #373867;
 }
+form p {
+    margin-bottom: 5%;
+    font-size: 13px;
+    color: #f13312;
+}
 input, select {
     width: 98%;
     height: 31px;
@@ -192,6 +197,12 @@ button[type=reset] {
     flex-direction: row;
     width: 100%;
     margin-top: 1%;
+}
+.error-input{
+    border: 2px solid #f13312;
+}
+.ok-input{
+    border: 2px solid #AACE9B;
 }
 #cross-icon,
 #email-icon {

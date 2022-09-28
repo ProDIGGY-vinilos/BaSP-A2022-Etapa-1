@@ -9,12 +9,21 @@ h1{
 header{
     margin-bottom: 3%;
 }
+main p {
+    margin-bottom: 5%;
+    font-size: 13px;
+    color: #f13312;
+}
+#name-contact-ls{
+    flex-direction: column;
+}
 .error-input{
     border: 2px solid #f13312;
 }
 .ok-input{
     border: 2px solid #AACE9B;
 }
+
 @media only screen and (min-width: 1024px) {
     .title-bar{
         margin-bottom: 1%;

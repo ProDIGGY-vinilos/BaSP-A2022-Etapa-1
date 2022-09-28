@@ -221,25 +221,29 @@
                         <div id="name-contact-ls">
                             <div>
                                 <label class="label-contact" for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your Name Here">
+                                <input type="text" class="inputs" name="name" placeholder="Your Name Here">
+                                <p name="name-p"></p>
                             </div>
                             <div>
                                 <label class="label-contact" for="contact-area">Contact area</label>
-                                <select name="contact-area" required>
+                                <select name="contact" class="inputs" required>
                                     <option value="Contact area" selected disabled hidden>Contact area</option>
                                     <option value="Human Resources">Human Resources</option>
                                     <option value="Systems">Systems</option>
                                     <option value="Commercialization">Commercialization</option>
                                 </select>
+                                <p name="contact-p"></p>
                             </div>
                         </div>
                         <div>
                             <label class="label-contact" for="email">Email</label>
-                            <input type="text" id="email" name="email" placeholder="Your Email Here">
+                            <input type="text" class="inputs" name="email" placeholder="Your Email Here">
+                            <p name="email-p"></p>
                         </div>
                         <div id="textarea">
                             <label class="label-contact" for="message">Message</label>
-                            <textarea name="message" placeholder="Your Message Here"></textarea>
+                            <textarea name="message" class="inputs" placeholder="Your Message Here"></textarea>
+                            <p name="message-p"></p>
                         </div>
                         <div id="btn-form">
                             <button type="submit" id="submit-btn"><i id="email-icon"
