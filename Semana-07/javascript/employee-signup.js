@@ -1,6 +1,9 @@
 window.onload = function(){
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+    var api = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
     var motiveError, validateinputContent, validateEmailContent, access;
+    var nameContent, lastnameContent, dniContent, birthdateContent, phoneContent, addressContent, locationContent, 
+    zipContent, emailContent, passContent, passRContent;
     // general methods
     function correctLength(inputC , cant) {
         if (inputC.length <= cant) {
@@ -143,7 +146,7 @@ window.onload = function(){
     //validate NAME
     var inputName = document.querySelector('[name="name"]');
     inputName.onblur = function(){
-        var nameContent = inputName.value;
+        nameContent = inputName.value;
         removeStyles(inputName);
         hasLetters(nameContent);
         correctLength(nameContent, 3);
@@ -156,7 +159,7 @@ window.onload = function(){
     //validate LASTNAME
     var inputLastname = document.querySelector('[name="lastname"]');
     inputLastname.onblur = function(){
-        var lastnameContent = inputLastname.value;
+        lastnameContent = inputLastname.value;
         removeStyles(inputLastname);
         hasLetters(lastnameContent);
         correctLength(lastnameContent, 3);
@@ -169,7 +172,7 @@ window.onload = function(){
     //validate DNI
     var inputDni = document.querySelector('[name="dni"]');
     inputDni.onblur = function(){
-        var dniContent = inputDni.value;
+        dniContent = inputDni.value;
         removeStyles(inputDni);
         hasNumbers(dniContent);
         correctLength(dniContent, 7);
@@ -182,7 +185,7 @@ window.onload = function(){
     var inputBirthdate = document.querySelector('[name="birthdate"]');
     inputBirthdate.onblur = function() {
         removeStyles(inputBirthdate);
-        var birthdateContent = new Date((inputBirthdate.value));
+        birthdateContent = new Date((inputBirthdate.value));
         var monthDiff = Date.now() - birthdateContent.getTime();
         var ageDateTime = new Date(monthDiff);
         var year = ageDateTime.getUTCFullYear();
@@ -193,6 +196,7 @@ window.onload = function(){
             validateinputContent = false;
             motiveError = 'Invalid age';
         }
+        birthdateContent = (inputBirthdate.value);
         styleValidation(inputBirthdate, validateinputContent);
     }
     inputBirthdate.onfocus = function(){
@@ -201,7 +205,7 @@ window.onload = function(){
     //validate Phone
     var inputPhone = document.querySelector('[name="phone"]');
     inputPhone.onblur = function(){
-        var phoneContent = inputPhone.value;
+        phoneContent = inputPhone.value;
         removeStyles(inputPhone);
         hasNumbers(phoneContent);
         rangeLength(phoneContent, 10, 10);
@@ -213,7 +217,7 @@ window.onload = function(){
     //validate Address
     var inputAddress = document.querySelector('[name="address"]');
     inputAddress.onblur = function(){
-        var addressContent = ((inputAddress.value).split(' ')).join('');
+        addressContent = ((inputAddress.value).split(' ')).join('');
         removeStyles(inputAddress);
         correctLength(addressContent, 5);
         hasNumAndLetters(addressContent);
@@ -228,7 +232,7 @@ window.onload = function(){
     //validate Location
     var inputLocation = document.querySelector('[name="location"]');
     inputLocation.onblur = function() {
-        var locationContent = ((inputLocation.value).split(' ')).join('');
+        locationContent = ((inputLocation.value).split(' ')).join('');
         removeStyles(inputLocation);
         correctLength(locationContent, 3);
         hasNumAndLetters(locationContent);
@@ -240,22 +244,23 @@ window.onload = function(){
         removeStyles(inputLocation);
     }
     //validate Postal Code
-    var inputPC = document.querySelector('[name="postalcode"]');
-    inputPC.onblur = function() {
-        var pcContent = inputPC.value;
-        removeStyles(inputPC);
-        hasNumbers(inputPC);
-        rangeLength(pcContent, 4, 5);
-        styleValidation(inputPC, validateinputContent);
+    var inputZip = document.querySelector('[name="postalcode"]');
+    inputZip.onblur = function() {
+        zipContent = inputZip.value;
+        removeStyles(inputZip);
+        hasNumbers(inputZip);
+        rangeLength(zipContent, 4, 5);
+        styleValidation(inputZip, validateinputContent);
     }
-    inputPC.onfocus = function(){
-        removeStyles(inputPC);
+    inputZip.onfocus = function(){
+        removeStyles(inputZip);
     }
     //validate EMAIL
     var inputEmail = document.querySelector('[name="email"]');
     inputEmail.onblur = function() {
         removeStyles(inputEmail);
-        if ((inputEmail.value).match(emailExpression)) {
+        emailContent = inputEmail.value;
+        if ((emailContent).match(emailExpression)) {
             validateEmailContent = true;
         } else {
             validateEmailContent = false;
@@ -269,7 +274,7 @@ window.onload = function(){
     //validate PASSWORD
     var inputPass = document.querySelector('[name="pass"]');
     inputPass.onblur = function() {
-        var passContent = inputPass.value;
+        passContent = inputPass.value;
         removeStyles(inputPass);
         correctLength(passContent, 7);
         if(validateinputContent){hasNumAndLetters(passContent);}
@@ -281,8 +286,7 @@ window.onload = function(){
     //validate PASSWORD REPEAT
     var inputPassR = document.querySelector('[name="passr"]');
     inputPassR.onblur = function() {
-        var passRContent = inputPassR.value;
-        var passContent = (document.querySelector('[name="pass"]')).value;
+        passRContent = inputPassR.value;
         removeStyles(inputPassR);
         if ((passRContent).match(passContent)) {
             validateinputContent = true;
@@ -300,18 +304,43 @@ window.onload = function(){
         e.preventDefault();
         alertBtn();
         if (access) {
-            var url = api+'?email='+emailContent+'&password='+passContent;
+            var date = birthdateContent.split('-');
+            var year = date.shift();
+            date.push(year);
+            birthdateContent = date.join('/');
+            var url = api+'?name='+nameContent+'&lastName='+lastnameContent+'&dni='+dniContent+'&dob='+birthdateContent+
+            '&phone='+phoneContent+'&address='+addressContent+'&city='+locationContent+'&zip='+zipContent+
+            '&email='+emailContent+'&password='+passContent;
             fetch(url)
                 .then(function(response){
                     return response.json();
                 })
                 .then(function(data){
                     alert(data.msg);
+                    alert(' ID: '+data.data.id+'\n NAME: '+data.data.name+'\n LASTNAME: '+data.data.lastName+
+                    '\n DNI:'+data.data.dni+'\n BIRTHDATE: '+data.data.dob+'\n PHONE: '+data.data.phone+
+                    '\n ADDRESS: '+data.data.address+'\n LOCATION: '+data.data.city+'\n POSTAL CODE: '+data.data.zip+
+                    '\n EMAIL: '+data.data.email+'\n PASSWORD: '+data.data.password);
+                    date = data.data.dob.split('/');
+                    var month = date.shift();
+                    var day = date.shift();
+                    date.push(month);
+                    date.push(day);
+                    date = date.join('-');
+                    localStorage.setItem("name", data.data.name);
+                    localStorage.setItem("lastname", data.data.lastName);
+                    localStorage.setItem("dni", data.data.dni);
+                    localStorage.setItem("birthdate", date);
+                    localStorage.setItem("phone", data.data.phone);
+                    localStorage.setItem("address", data.data.address);
+                    localStorage.setItem("location", data.data.city);
+                    localStorage.setItem("postalCode", data.data.zip);
+                    localStorage.setItem("email", data.data.email);
+                    localStorage.setItem("password", data.data.password);
                 })
                 .catch(function(error){
                     alert(error);
                 })
-            setTimeout(redirect('../views/index.html'), 5000);
         }
     }
     //reset fields
