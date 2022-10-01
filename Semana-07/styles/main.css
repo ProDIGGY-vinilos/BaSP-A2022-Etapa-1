@@ -1,0 +1,416 @@
+.title {
+    margin-bottom: 2%;
+    padding-top: 5%;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+.title-bar {
+    height: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 6%;
+    background: #d9d9d9;
+}
+/* WHO WE ARE SETTINGS */
+#who-we-are {
+    margin-top: 8%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #373867;
+}
+#who-we-are>p {
+    margin-bottom: 3%;
+    margin-right: 11%;
+    margin-left: 11%;
+}
+#text-green {
+    color: #AACE9B;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* END WHO WE ARE SETTINGS */
+/* WHY CHOOSE USE SETTINGS */
+#decision-making-section,
+#traceability-section,
+#management-section,
+#productivity-section {
+    display: flex;
+    padding-top: 14%;
+    padding-bottom: 14%;
+}
+#productivity-section {
+    padding-top: 0;
+}
+#traceability-section,
+#decision-making-section {
+    background-color: #d9d9d9;
+}
+.subtitle-bar,#subtitle-bar-blue,
+#subtitle-bar-grey,.subtitle-bar-right {
+    height: 4px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+.subtitle-bar {
+    margin-bottom: 7%;
+}
+#subtitle-bar-blue {
+    margin-top: 2%;
+    background: #286276;
+}
+#subtitle-bar-grey {
+    background: #d9d9d9;
+}
+.subtitle-bar-right {
+    margin-left: 0;
+    background: #FFFFFF;
+}
+.img-why-left-cont, .img-why-right-cont {
+    display: none;
+}
+.text-why-left, .text-why-right {
+    width: 95%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 23px;
+}
+.p-why-left,
+.p-why-right,
+.text-why-left > .title,
+.text-why-right> .title {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    align-self: center;
+}
+/* END WHY CHOOSE USE SETTINGS */
+/* FUNCTIONALITIES SETTINGS */
+#functionalities-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#hours-log,
+#resource-management,
+#reports,
+#multiple-roles {
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 90%;
+    padding-right: 0;
+    padding-bottom: 3%;
+    padding-left: 0;
+}
+.text-functionalities {
+    text-align: center;
+    font-size: 20px;
+}
+.text-functionalities>h4 {
+    margin-bottom: 4%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.img-functionalities {
+    margin-right: 0;
+}
+/* END FUNCTIONALITIES SETTINGS */
+/* CONTACT SETTINGS */
+form {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 15px;
+    color: #373867;
+}
+form p {
+    margin-bottom: 5%;
+    font-size: 13px;
+    color: #f13312;
+}
+input, select {
+    width: 98%;
+    height: 31px;
+    margin-bottom: 5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+select {
+    width: 100%;
+}
+form > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 4%;
+}
+textarea {
+    height: 110px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button {
+    border-radius: 5px;
+    height: 47px;
+    border: none;
+    transition: 0.4s;
+}
+button[type=submit] {
+    width: 35%;
+    min-width: 80px;
+    max-width: 155px;
+    background-color: #AACE9B;
+}
+button[type=reset] {
+    width: 20%;
+    min-width: 55px;
+    max-width: 81px;
+    background-color: #f13312;
+}
+#name-contact-ls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+#name-contact-ls > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4%;
+}
+#textarea {
+    width: 100%;
+}
+#btn-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1%;
+}
+.error-input{
+    border: 2px solid #f13312;
+}
+.ok-input{
+    border: 2px solid #AACE9B;
+}
+#cross-icon,
+#email-icon {
+    margin-right: 5%;
+    color: #373867;
+}
+/* END CONTACT SETTINGS */
+/* MORE SECTIONS SETTINGS */
+#more-sections {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url(../assets/more-sections.png);
+    background-size: cover;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.ol-more-sections {
+    display: flex;
+    flex-direction: column;
+    color: #373867;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    align-items: flex-start;
+}
+.ol-more-sections > h5 {
+    margin-bottom: 1%;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+#support-ol {
+margin-right: 0px;
+}
+/* END MORE SECTIONS SETTINGS */
+@media only screen and (min-width: 481px) {
+    /*whychoose*/
+    .p-why-left,
+    .p-why-right,
+    .text-why-left > .title,
+    .text-why-right> .title{
+        text-align: left;
+    }
+    .subtitle-bar {
+        width: 112%;
+    }
+    .subtitle-bar-right {
+        margin-left: -5%;
+    }
+    .text-why-left, .text-why-right {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-top: 5%;
+        margin-left: 10%;
+        vertical-align: top;
+        font-size: 30px;
+    }
+    .text-why-right {
+        margin-left: 0;
+        margin-right: 10%;
+    }
+    .img-why-right-cont {
+        display: flex;
+        height: fit-content;
+        width: 40%;
+        justify-content: space-around;
+        margin-top: 4%;
+        margin-right: 10%;
+    }
+    .img-why-right {
+        display: block;
+        width: 100%;
+        margin-top: 4%;
+    }
+    .img-why-left-cont {
+        display: flex;
+        height: fit-content;
+        width: 40%;
+        justify-content: space-around;
+        margin-top: 4%;
+        margin-left: 10%;
+    }
+    .img-why-left {
+        display: block;
+        width: 100%;
+    }
+    .text-why-right > .title {
+        margin-left: 10%;
+    }
+    .p-why-right {
+        margin-left: 10%;
+    }
+    #management-section, #productivity-section {
+        padding-bottom: 14%;
+    }
+    #management-section {
+        padding-top: 14%;
+    }
+    /**/
+    /* FUNCTIONALITIES SETTINGS */
+    #functionalities {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    #hours-log,
+    #resource-management,
+    #reports,
+    #multiple-roles {
+        width: 38%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    #hours-log,
+    #reports {
+        padding-left: 10%;
+    }
+    #resource-management,
+    #multiple-roles {
+        padding-right: 7%;
+    }
+    /* END FUNCTIONALITIES SETTINGS */
+    /* CONTACT FORM SETTINGS */
+    #name-contact-ls {
+        display: flex;
+        flex-direction: row;
+    }
+    #name-contact-ls > div {
+        width: 48%;
+    }
+    form > div {
+        width: 45%;
+    }
+    select {
+        margin-bottom: 1%;
+        width: 99%;
+    }
+    label {
+        margin-bottom: 1%;
+    }
+    textarea {
+        height: 224px;
+    }
+    button[type=submit] {
+        width: 35%;
+    }
+    button[type=reset] {
+        width: 20%;
+    }
+    /* END CONTACT FORM SETTINGS */
+    /* MORE SECTIONS SETTINGS */
+    #more-sections {
+        flex-direction: row;
+        height: fit-content;
+    }
+    /* END MORE SECTIONS SETTINGS */
+}
+@media only screen and (min-width: 1024px) {
+    /* WHO WE ARE */
+    #who-we-are>h2 {
+        margin-bottom: 15px;
+    }
+    /* WHY CHOOSE US */
+    #why-choose-us h3:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        color: #F13312;
+    }
+    /* FUNCTIONALITIES */
+    #hours-log,
+    #resource-management,
+    #reports,
+    #multiple-roles {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    #functionalities h4:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        color: #F13312;
+    }
+    .img-functionalities {
+        margin-right: 3%;
+    }
+    .image-zoom {
+        transition: 0.3s;
+    }
+    .image-zoom:hover {
+        cursor: pointer;
+        transform: scale(1.15, 1.15);
+    }
+    /* CONTACT */
+    button[type=submit] {
+        width: 15%;
+    }
+    button[type=reset] {
+        width: 10%;
+    }
+    button:hover {
+        cursor: pointer;
+        box-shadow: 1px 5px 5px  gray;
+    }
+    #more-sections div h5:hover {
+        color: #F13312;
+    }
+}
+

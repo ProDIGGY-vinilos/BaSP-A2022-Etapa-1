@@ -1,0 +1,74 @@
+header {
+    display: flex;
+    background-size: cover;
+    background-image: url(../assets/office.png);
+}
+#text-header {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    margin-left: 10%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    color: #FFFFFF;
+    text-align: left;
+}
+h1,
+#text-header > div,
+#text-header > h2,
+#text-header  >p {
+    margin-left: 10%;
+    text-align: left;
+}
+#text-header > h2 {
+    margin-bottom: 20%;
+    font-size: 20px;
+    font-weight: 400;
+}
+#text-header > p {
+    width: 75%;
+    margin-bottom: 15%;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+}
+.line-green {
+    height: 2px;
+    margin-bottom: 4%;
+    margin-right: 3%;
+    background: #AACE9B;
+}
+#aside-btn-mobile {
+    display: flex;
+    position: fixed;
+    align-self: flex-start;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 32px;
+}
+#aside-btn-mobile > i {
+    color: #AACE9B;
+}
+#aside-btn-mobile > i:hover {
+    color: #f13312;
+}
+@media only screen and (min-width: 480px) {
+    #text-header {
+        width: 55%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #text-header {
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #text-header {
+        width: 40%;
+    }
+    #aside-btn-mobile {
+        display: none;
+    }
+}

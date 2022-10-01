@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="descripcion"
+        content="This page allows employees to have a register of hours of work, rate and register their projects" />
+    <meta name="author" content="Cristian Gerster" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="employee, work, reports, hours log, roles, Resource, leadership, team, management,
+     traceability, Productivity, Booster" />
+    <script src="https://kit.fontawesome.com/d7c9d962f7.js" crossorigin="anonymous"></script>
+    <title>Trackgenix</title>
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/aside.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/employee-signup.css">
+    <script src="../javascript/employee-signup.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <div id="upper-aside">
+                <img src="../assets/logo-trackgenix.png" alt="Logo Trackgenix">
+                <div>
+                    <p>Trackgenix</p>
+                    <i class="fa-solid fa-angle-left fa-xl"></i>
+                </div>
+            </div>
+            <nav id="option-aside">
+                <a class="menu-option" href="../views/index.html">
+                    <i class="fa-solid fa-house fa-lg"></i>
+                    <p class="text-aside">Home</p>
+                </a>
+                <a class="menu-option" href="../views/sign-up.html">
+                    <i class="fa-solid fa-user fa-lg"></i>
+                    <p class="text-aside">SignUp</p>
+                </a>
+                <a class="menu-option" href="../views/login.html">
+                    <i class="fa-solid fa-user fa-lg"></i>
+                    <p class="text-aside">LogIn</p>
+                </a>
+            </nav>
+            <div id="contact-aside">
+                <p>Contact Us</p>
+                <div class="line-orange"></div>
+                <a class="contact-option" href="https://mail.google.com" target="_blank">
+                    <i class="fa-regular fa-envelope fa-xl"></i>
+                    <p class="text-aside">trackgenix@gmail.com</p>
+                </a>
+                <a class="contact-option" href="">
+                    <i class="fa-solid fa-phone fa-xl"></i>
+                    <p class="text-aside">(000) 000-0000</p>
+                </a>
+                <a class="contact-option" href="">
+                    <i id="location-icon" class="fa-solid fa-location-dot fa-xl"></i>
+                    <p class="text-aside">1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
+                </a>
+            </div>
+        </aside>
+        <div class="wrapper-inner">
+            <header>
+                <div id="aside-btn-mobile"><i class="fa-sharp fa-solid fa-bars"></i></div>
+                <h1>SignUp</h1>
+                <div class="title-bar"></div>
+            </header>
+            <main>
+                <form>
+                    <div id="name-contact-ls">
+                        <div>
+                            <label class="label-contact" for="name">Name</label>
+                            <input type="text" name="name" placeholder="Your name here">
+                            <p name="name-p"></p>
+
+                            <label class="label-contact" for="lastname">Lastname</label>
+                            <input type="text" name="lastname" placeholder="Your lastname here">
+                            <p name="lastname-p"></p>
+
+                            <label class="label-contact" for="dni">DNI</label>
+                            <input type="text" name="dni" placeholder="Your DNI here">
+                            <p name="dni-p"></p>
+
+                            <label class="label-contact" for="birthdate">Birthdate</label>
+                            <input type="date" name="birthdate" placeholder="Your birthdate here">
+                            <p name="birthdate-p"></p>
+
+                            <label class="label-contact" for="phone">Phone</label>
+                            <input type="text" name="phone" placeholder="Your phone number here">
+                            <p name="phone-p"></p>
+                        </div>
+                        <div>
+                            <label class="label-contact" for="address">Address</label>
+                            <input type="text" name="address" placeholder="Your addres here">
+                            <p name="address-p"></p>
+
+                            <label class="label-contact" for="location">Location</label>
+                            <input type="text" name="location" placeholder="Your location here">
+                            <p name="location-p"></p>
+
+                            <label class="label-contact" for="postalcode">Postal Code</label>
+                            <input type="text" name="postalcode" placeholder="Your postal code here">
+                            <p name="postalcode-p"></p>
+
+                            <label class="label-contact" for="email">Email</label>
+                            <input type="text" name="email" placeholder="Your email here">
+                            <p name="email-p"></p>
+
+                            <label class="label-contact" for="pass">Password</label>
+                            <input type="password" name="pass" placeholder="Your password here">
+                            <p name="pass-p"></p>
+
+                            <label class="label-contact" for="passr">Repeat password</label>
+                            <input type="password" name="passr" placeholder="Repeat password here">
+                            <p name="passr-p"></p>
+                        </div>
+                    </div>
+                    <div id="btn-form">
+                        <button type="submit" id="submit-btn">
+                            Create
+                        </button>
+                        <button type="reset" id="reset-btn"><i id="cross-icon" class="fa-solid fa-xmark fa-sm"></i>
+                            Reset
+                        </button>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <div id="social-media">
+                    <a href="https://www.linkedin.com/in/gerstercristian/" target="_blank">
+                        <img class="image-zoom-footer" src="../assets/Icons/linkedIn-negative.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img class="image-zoom-footer" src="../assets/Icons/facebook-negative.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img class="image-zoom-footer" src="../assets/Icons/twitter-negative.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img class="image-zoom-footer" src="../assets/Icons/instagram-negative.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.github.com/ProDIGGY-vinilos" target="_blank">
+                        <img class="image-zoom-footer" src="../assets/Icons/github-negative.png" alt="Github">
+                    </a>
+                </div>
+                <h6>Rosario, Argentina</h6>
+                <h6>Copyright <i class="fa fa-copyright"></i> 2022 Radium Rocket. All rights reserved</h6>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
