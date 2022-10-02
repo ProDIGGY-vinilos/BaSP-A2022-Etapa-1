@@ -4,6 +4,18 @@ window.onload = function(){
     var motiveError, validateinputContent, validateEmailContent, access;
     var nameContent, lastnameContent, dniContent, birthdateContent, phoneContent, addressContent, locationContent, 
     zipContent, emailContent, passContent, passRContent;
+    var inputName = document.querySelector('[name="name"]');;
+    var inputLastname = document.querySelector('[name="lastname"]');
+    var inputDni = document.querySelector('[name="dni"]');
+    var inputBirthdate = document.querySelector('[name="birthdate"]');
+    var inputPhone = document.querySelector('[name="phone"]');
+    var inputAddress = document.querySelector('[name="address"]');
+    var inputLocation = document.querySelector('[name="location"]');
+    var inputZip = document.querySelector('[name="postalcode"]');
+    var inputEmail = document.querySelector('[name="email"]');
+    var inputPass = document.querySelector('[name="pass"]');
+    var inputPassR = document.querySelector('[name="passr"]');
+
     // general methods
     function correctLength(inputC , cant) {
         if (inputC.length <= cant) {
@@ -143,8 +155,32 @@ window.onload = function(){
     function redirect(link) {
         location.href=link;
     }
+    function haveLocalStorage(name) {
+        if(localStorage.getItem(name)){
+            return true;
+        }   else {    return false;   }
+    }
+    function loadLocalStorage(input, localStorageName) {
+        input.value = localStorage.getItem(localStorageName);
+    }
+    if (haveLocalStorage(inputName.name) &&
+        haveLocalStorage(inputLastname.name) &&
+        haveLocalStorage(inputDni.name) &&
+        haveLocalStorage(inputBirthdate.name) &&
+        haveLocalStorage(inputPhone.name) &&
+        haveLocalStorage(inputAddress.name) &&
+        haveLocalStorage(inputLocation.name) &&
+        haveLocalStorage(inputZip.name) &&
+        haveLocalStorage(inputEmail.name) &&
+        haveLocalStorage(inputPass.name)) {
+        loadLocalStorage(inputName, inputName.name); loadLocalStorage(inputLastname, inputLastname.name);
+        loadLocalStorage(inputDni,inputDni.name); loadLocalStorage(inputBirthdate, inputBirthdate.name);
+        loadLocalStorage(inputPhone, inputPhone.name); loadLocalStorage(inputAddress, inputAddress.name);
+        loadLocalStorage(inputLocation, inputLocation.name); loadLocalStorage(inputZip, inputZip.name);
+        loadLocalStorage(inputEmail, inputEmail.name); loadLocalStorage(inputPass, inputPass.name);
+        loadLocalStorage(inputPassR, inputPass.name);
+    }
     //validate NAME
-    var inputName = document.querySelector('[name="name"]');
     inputName.onblur = function(){
         nameContent = inputName.value;
         removeStyles(inputName);
@@ -157,7 +193,6 @@ window.onload = function(){
         removeStyles(inputName);
     }
     //validate LASTNAME
-    var inputLastname = document.querySelector('[name="lastname"]');
     inputLastname.onblur = function(){
         lastnameContent = inputLastname.value;
         removeStyles(inputLastname);
@@ -170,7 +205,6 @@ window.onload = function(){
         removeStyles(inputLastname);
     }
     //validate DNI
-    var inputDni = document.querySelector('[name="dni"]');
     inputDni.onblur = function(){
         dniContent = inputDni.value;
         removeStyles(inputDni);
@@ -182,7 +216,6 @@ window.onload = function(){
         removeStyles(inputDni);
     }
     //validate Birthdate
-    var inputBirthdate = document.querySelector('[name="birthdate"]');
     inputBirthdate.onblur = function() {
         removeStyles(inputBirthdate);
         birthdateContent = new Date((inputBirthdate.value));
@@ -203,7 +236,6 @@ window.onload = function(){
         removeStyles(inputBirthdate);
     }
     //validate Phone
-    var inputPhone = document.querySelector('[name="phone"]');
     inputPhone.onblur = function(){
         phoneContent = inputPhone.value;
         removeStyles(inputPhone);
@@ -215,7 +247,6 @@ window.onload = function(){
         removeStyles(inputPhone);
     }
     //validate Address
-    var inputAddress = document.querySelector('[name="address"]');
     inputAddress.onblur = function(){
         addressContent = ((inputAddress.value).split(' ')).join('');
         removeStyles(inputAddress);
@@ -230,7 +261,6 @@ window.onload = function(){
         removeStyles(inputAddress);
     }
     //validate Location
-    var inputLocation = document.querySelector('[name="location"]');
     inputLocation.onblur = function() {
         locationContent = ((inputLocation.value).split(' ')).join('');
         removeStyles(inputLocation);
@@ -244,7 +274,6 @@ window.onload = function(){
         removeStyles(inputLocation);
     }
     //validate Postal Code
-    var inputZip = document.querySelector('[name="postalcode"]');
     inputZip.onblur = function() {
         zipContent = inputZip.value;
         removeStyles(inputZip);
@@ -256,7 +285,6 @@ window.onload = function(){
         removeStyles(inputZip);
     }
     //validate EMAIL
-    var inputEmail = document.querySelector('[name="email"]');
     inputEmail.onblur = function() {
         removeStyles(inputEmail);
         emailContent = inputEmail.value;
@@ -272,7 +300,6 @@ window.onload = function(){
         removeStyles(inputEmail);
     }
     //validate PASSWORD
-    var inputPass = document.querySelector('[name="pass"]');
     inputPass.onblur = function() {
         passContent = inputPass.value;
         removeStyles(inputPass);
@@ -284,7 +311,6 @@ window.onload = function(){
         removeStyles(inputPass);
     }
     //validate PASSWORD REPEAT
-    var inputPassR = document.querySelector('[name="passr"]');
     inputPassR.onblur = function() {
         passRContent = inputPassR.value;
         removeStyles(inputPassR);
@@ -327,16 +353,16 @@ window.onload = function(){
                     date.push(month);
                     date.push(day);
                     date = date.join('-');
-                    localStorage.setItem("name", data.data.name);
-                    localStorage.setItem("lastname", data.data.lastName);
-                    localStorage.setItem("dni", data.data.dni);
-                    localStorage.setItem("birthdate", date);
-                    localStorage.setItem("phone", data.data.phone);
-                    localStorage.setItem("address", data.data.address);
-                    localStorage.setItem("location", data.data.city);
-                    localStorage.setItem("postalCode", data.data.zip);
-                    localStorage.setItem("email", data.data.email);
-                    localStorage.setItem("password", data.data.password);
+                    localStorage.setItem(inputName.name, data.data.name);
+                    localStorage.setItem(inputLastname.name, data.data.lastName);
+                    localStorage.setItem(inputDni.name, data.data.dni);
+                    localStorage.setItem(inputBirthdate.name, date);
+                    localStorage.setItem(inputPhone.name, data.data.phone);
+                    localStorage.setItem(inputAddress.name, data.data.address);
+                    localStorage.setItem(inputLocation.name, data.data.city);
+                    localStorage.setItem(inputZip.name, data.data.zip);
+                    localStorage.setItem(inputEmail.name, data.data.email);
+                    localStorage.setItem(inputPass.name, data.data.password);
                 })
                 .catch(function(error){
                     alert(error);
