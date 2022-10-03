@@ -45,6 +45,7 @@ window.onload = function(){
         motiveError = '';
         input.classList.remove('ok-input');
         input.classList.remove('error-input');
+        //validateinputContent = false;
         setP(input);
     }
     function hasLetters(inputC) {
@@ -185,8 +186,12 @@ window.onload = function(){
         nameContent = inputName.value;
         removeStyles(inputName);
         hasLetters(nameContent);
-        correctLength(nameContent, 3);
-        hasSpaceFirst(nameContent);
+        if(validateinputContent){
+            correctLength(nameContent, 3);
+            if(validateinputContent){
+                hasSpaceFirst(nameContent);
+            }
+        }
         styleValidation(inputName, validateinputContent);
     }
     inputName.onfocus = function(){
@@ -197,8 +202,12 @@ window.onload = function(){
         lastnameContent = inputLastname.value;
         removeStyles(inputLastname);
         hasLetters(lastnameContent);
-        correctLength(lastnameContent, 3);
-        hasSpaceFirst(lastnameContent);
+        if(validateinputContent){
+            correctLength(lastnameContent, 3);
+            if(validateinputContent){
+                hasSpaceFirst(lastnameContent);
+            }
+        }
         styleValidation(inputLastname, validateinputContent);
     }
     inputLastname.onfocus = function(){
@@ -209,7 +218,9 @@ window.onload = function(){
         dniContent = inputDni.value;
         removeStyles(inputDni);
         hasNumbers(dniContent);
-        correctLength(dniContent, 7);
+        if(validateinputContent){
+            rangeLength(dniContent, 8, 8);
+        }
         styleValidation(inputDni, validateinputContent);
     }
     inputDni.onfocus = function(){
@@ -223,7 +234,7 @@ window.onload = function(){
         var ageDateTime = new Date(monthDiff);
         var year = ageDateTime.getUTCFullYear();
         var age = Math.abs(year - 1970);
-        if (age > 18 && age < 100) {
+        if (age >= 18 && age < 100) {
             validateinputContent = true;
         } else {
             validateinputContent = false;
@@ -240,7 +251,9 @@ window.onload = function(){
         phoneContent = inputPhone.value;
         removeStyles(inputPhone);
         hasNumbers(phoneContent);
-        rangeLength(phoneContent, 10, 10);
+        if(validateinputContent){
+            rangeLength(phoneContent, 10, 10);
+        }
         styleValidation(inputPhone, validateinputContent);
     }
     inputPhone.onfocus = function(){
@@ -251,10 +264,16 @@ window.onload = function(){
         addressContent = ((inputAddress.value).split(' ')).join('');
         removeStyles(inputAddress);
         correctLength(addressContent, 5);
-        hasNumAndLetters(addressContent);
-        addressContent = (inputAddress.value);
-        hasNumOrLetters(addressContent);
-        hasSpaceFirst(addressContent);
+        if(validateinputContent){
+            hasNumAndLetters(addressContent);
+            if(validateinputContent){
+                addressContent = (inputAddress.value);
+                hasNumOrLetters(addressContent);
+                if(validateinputContent){
+                    hasSpaceFirst(addressContent);
+                }
+            }
+        }
         styleValidation(inputAddress, validateinputContent);
     }
     inputAddress.onfocus = function(){
@@ -265,9 +284,13 @@ window.onload = function(){
         locationContent = ((inputLocation.value).split(' ')).join('');
         removeStyles(inputLocation);
         correctLength(locationContent, 3);
-        hasNumAndLetters(locationContent);
-        locationContent = inputLocation.value;
-        hasSpaceFirst(locationContent);
+        if(validateinputContent){
+            hasNumAndLetters(locationContent);
+            if(validateinputContent){
+                locationContent = inputLocation.value;
+                hasSpaceFirst(locationContent);
+            }
+        }
         styleValidation(inputLocation, validateinputContent);
     }
     inputLocation.onfocus = function(){
@@ -277,8 +300,10 @@ window.onload = function(){
     inputZip.onblur = function() {
         zipContent = inputZip.value;
         removeStyles(inputZip);
-        hasNumbers(inputZip);
-        rangeLength(zipContent, 4, 5);
+        hasNumbers(zipContent);
+        if(validateinputContent){
+            rangeLength(zipContent, 4, 5);
+        }
         styleValidation(inputZip, validateinputContent);
     }
     inputZip.onfocus = function(){
@@ -304,7 +329,9 @@ window.onload = function(){
         passContent = inputPass.value;
         removeStyles(inputPass);
         correctLength(passContent, 7);
-        if(validateinputContent){hasNumAndLetters(passContent);}
+        if(validateinputContent){
+            hasNumAndLetters(passContent);
+        }
         styleValidation(inputPass, validateinputContent);
     }
     inputPass.onfocus = function(){
