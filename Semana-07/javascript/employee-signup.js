@@ -1,20 +1,21 @@
 window.onload = function(){
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-    var api = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
+    var api = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?';
     var motiveError, validateinputContent, validateEmailContent, access;
-    var nameContent, lastnameContent, dniContent, birthdateContent, phoneContent, addressContent, locationContent, 
+    var nameContent, lastnameContent, dniContent, birthdateContent, phoneContent, addressContent, locationContent,
     zipContent, emailContent, passContent, passRContent;
     var inputName = document.querySelector('[name="name"]');;
-    var inputLastname = document.querySelector('[name="lastname"]');
+    var inputLastname = document.querySelector('[name="lastName"]');
     var inputDni = document.querySelector('[name="dni"]');
     var inputBirthdate = document.querySelector('[name="birthdate"]');
     var inputPhone = document.querySelector('[name="phone"]');
     var inputAddress = document.querySelector('[name="address"]');
-    var inputLocation = document.querySelector('[name="location"]');
-    var inputZip = document.querySelector('[name="postalcode"]');
+    var inputLocation = document.querySelector('[name="city"]');
+    var inputZip = document.querySelector('[name="zip"]');
     var inputEmail = document.querySelector('[name="email"]');
-    var inputPass = document.querySelector('[name="pass"]');
+    var inputPass = document.querySelector('[name="password"]');
     var inputPassR = document.querySelector('[name="passr"]');
+
 
     // general methods
     function correctLength(inputC , cant) {
@@ -136,20 +137,20 @@ window.onload = function(){
         var pAll = document.querySelectorAll("main p");
         var aux = 'ok';
         for (var i = 0; i < pAll.length; i++) {
-           pValue = pAll[i].innerHTML;
-           if((pValue != '') ){
+            pValue = pAll[i].innerHTML;
+            if((pValue != '') ){
                 aux = (pAll[i].attributes.name.nodeValue).split('-');
                 var inputP = (document.querySelector("[for="+ aux[0] +"]")).innerHTML;
                 alert('Error in: '+inputP+ ': ' +pValue);
-           }
+            }
         }
         if(aux == 'ok'){
             var inputAll = document.querySelectorAll('input');
             alert(':::Welcome:::');
-            for (var i = 0; i < pAll.length; i++) {
-                var labelInput = (document.querySelector("[for="+ inputAll[i].name +"]")).innerHTML;
-                alert(labelInput+ ': ' +inputAll[i].value);
-            }
+            // for (var i = 0; i < pAll.length; i++) {
+            //     var labelInput = (document.querySelector("[for="+ inputAll[i].name +"]")).innerHTML;
+            //     alert(labelInput+ ': ' +inputAll[i].value);
+            // }
             access = true;
         } else{ access = false; }
     }
@@ -180,6 +181,26 @@ window.onload = function(){
         loadLocalStorage(inputLocation, inputLocation.name); loadLocalStorage(inputZip, inputZip.name);
         loadLocalStorage(inputEmail, inputEmail.name); loadLocalStorage(inputPass, inputPass.name);
         loadLocalStorage(inputPassR, inputPass.name);
+    }
+    function urlGenerator() {
+        var attribute;
+        var inputs = document.getElementsByTagName("input");
+        var urlDone = [];
+        for (var j = 0; j < inputs.length - 1; j++) {
+            attribute = inputs[j].getAttribute("name");
+            if (attribute == 'birthdate') {
+                birthdateContent = (inputs[j].value);
+                var date = birthdateContent.split('-');
+                var year = date.shift();
+                date.push(year);
+                birthdateContent = date.join('/');
+                urlDone[j] = "dob="+birthdateContent;
+            }
+            else {
+                urlDone[j] = attribute + '=' + inputs[j].value.trim();
+            }
+        }
+        return urlDone;
     }
     //validate NAME
     inputName.onblur = function(){
@@ -357,42 +378,47 @@ window.onload = function(){
         e.preventDefault();
         alertBtn();
         if (access) {
-            var date = birthdateContent.split('-');
-            var year = date.shift();
-            date.push(year);
-            birthdateContent = date.join('/');
-            var url = api+'?name='+nameContent+'&lastName='+lastnameContent+'&dni='+dniContent+'&dob='+birthdateContent+
-            '&phone='+phoneContent+'&address='+addressContent+'&city='+locationContent+'&zip='+zipContent+
-            '&email='+emailContent+'&password='+passContent;
-            fetch(url)
+            var url = urlGenerator();
+            var urlComplete = url.filter(String);
+            urlComplete = url.join('&');
+            fetch(api+urlComplete)
                 .then(function(response){
                     return response.json();
                 })
                 .then(function(data){
-                    alert(data.msg);
-                    alert(' ID: '+data.data.id+'\n NAME: '+data.data.name+'\n LASTNAME: '+data.data.lastName+
-                    '\n DNI:'+data.data.dni+'\n BIRTHDATE: '+data.data.dob+'\n PHONE: '+data.data.phone+
-                    '\n ADDRESS: '+data.data.address+'\n LOCATION: '+data.data.city+'\n POSTAL CODE: '+data.data.zip+
-                    '\n EMAIL: '+data.data.email+'\n PASSWORD: '+data.data.password);
-                    date = data.data.dob.split('/');
-                    var month = date.shift();
-                    var day = date.shift();
-                    date.push(month);
-                    date.push(day);
-                    date = date.join('-');
-                    localStorage.setItem(inputName.name, data.data.name);
-                    localStorage.setItem(inputLastname.name, data.data.lastName);
-                    localStorage.setItem(inputDni.name, data.data.dni);
-                    localStorage.setItem(inputBirthdate.name, date);
-                    localStorage.setItem(inputPhone.name, data.data.phone);
-                    localStorage.setItem(inputAddress.name, data.data.address);
-                    localStorage.setItem(inputLocation.name, data.data.city);
-                    localStorage.setItem(inputZip.name, data.data.zip);
-                    localStorage.setItem(inputEmail.name, data.data.email);
-                    localStorage.setItem(inputPass.name, data.data.password);
+                    if(data.success){
+                        alert(data.msg);
+                        alert(' ID: '+data.data.id+'\n NAME: '+data.data.name+'\n LASTNAME: '+data.data.lastName+
+                        '\n DNI:'+data.data.dni+'\n BIRTHDATE: '+data.data.dob+'\n PHONE: '+data.data.phone+
+                        '\n ADDRESS: '+data.data.address+'\n LOCATION: '+data.data.city+'\n POSTAL CODE: '+data.data.zip+
+                        '\n EMAIL: '+data.data.email+'\n PASSWORD: '+data.data.password);
+                        date = data.data.dob.split('/');
+                        var month = date.shift();
+                        var day = date.shift();
+                        date.push(month);
+                        date.push(day);
+                        date = date.join('-');
+                        localStorage.setItem(inputName.name, data.data.name);
+                        localStorage.setItem(inputLastname.name, data.data.lastName);
+                        localStorage.setItem(inputDni.name, data.data.dni);
+                        localStorage.setItem(inputBirthdate.name, date);
+                        localStorage.setItem(inputPhone.name, data.data.phone);
+                        localStorage.setItem(inputAddress.name, data.data.address);
+                        localStorage.setItem(inputLocation.name, data.data.city);
+                        localStorage.setItem(inputZip.name, data.data.zip);
+                        localStorage.setItem(inputEmail.name, data.data.email);
+                        localStorage.setItem(inputPass.name, data.data.password);
+                    } else {
+                        var errorA = data.errors;
+                        var errorS = '';
+                        for (var i = 0; i < errorA.length; i++) {
+                            errorS += errorA[i].msg+'\n';
+                        }
+                        throw new Error(errorS);
+                    }
                 })
                 .catch(function(error){
-                    alert(error);
+                        alert(error);
                 })
         }
     }
