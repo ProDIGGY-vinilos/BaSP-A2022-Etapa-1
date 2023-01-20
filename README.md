@@ -6,6 +6,9 @@ The company GigaTech Software Solutions SA provides software development service
     2. Access to the corresponding folder
     3. Open the index.html
     4. Enjoy all your benefits
+    OR
+    1. Click in the week you like to watch
+    2. Enjoy the experience
 
 
 
